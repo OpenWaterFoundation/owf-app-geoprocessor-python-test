@@ -4,8 +4,6 @@ StartLog(LogFile="results/test-ReadGeoLayerFromGeoJSON-Point-AllowedDiffCount2.g
 # - allows for two differences
 #	- GeoJSON precision could be different
 #	- GeoJSON name could be different
-# Uncomment the following line to regenerate expected results
-CopyFile(SourceFile="data/point.geojson", DestinationFile="expected-results/test-ReadGeoLayerFromGeoJSON-Point-AllowedDiffCount2-out.geojson")
 # Remove the result point geojson file from the last run of the test, if existing
 RemoveFile(SourceFile="results/test-ReadGeoLayerFromGeoJSON-Point-AllowedDiffCount2-out.geojson", IfSourceFileNotFound="Ignore")
 # Read the point GeoJSON (with GeoLayerID of "point") into the GeoProcessor 
@@ -13,4 +11,4 @@ ReadGeoLayerFromGeoJSON(SpatialDataFile="data/point.geojson", GeoLayerID="point"
 # Write the point Geolayer to a GeoJSON file 
 WriteGeoLayerToGeoJSON(GeoLayerID="point", OutputFolder="results", OutputFilename="test-ReadGeoLayerFromGeoJSON-Point-AllowedDiffCount2-out")
 # Compare the results to the expected results
-CompareFiles(InputFile1="expected-results/test-ReadGeoLayerFromGeoJSON-Point-AllowedDiffCount2-out.geojson", InputFile2="results/test-ReadGeoLayerFromGeoJSON-Point-AllowedDiffCount2-out.geojson",AllowedDiffCount="2",IfDifferent="Warn")
+CompareFiles(InputFile1="data/point.geojson", InputFile2="results/test-ReadGeoLayerFromGeoJSON-Point-AllowedDiffCount2-out.geojson",AllowedDiffCount="2",IfDifferent="Warn")
