@@ -1,0 +1,2 @@
+# WriteGeoLayerToGeoJSON Tests
+The `WriteGeoLayerToGeoJSON` command is tested within the `ReadGeoLayerFromGeoJSON` unit tests. The `ReadGeoLayerFromGeoJSON` tests read GeoLayers from GeoJSON (`POINT`, `LINE`, `POLYGON`)  spatial data files. Each test then utilizes the `WriteGeoLayerToGeoJSON` commands to create an output product in GeoJSON format. The original GeoJSON data files are then compared to the output GeoJSON data files created from the test. Refer to the `test/commands/ReadGeoLayerFromGeoJSON` folder for further information. 
