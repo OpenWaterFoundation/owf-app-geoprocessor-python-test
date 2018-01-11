@@ -1,4 +1,4 @@
-StartLog(LogFile="Results/test-CompareFiles-SameFiles-IfSameWarn.gp.log")
+StartLog(LogFile="results/test-CompareFiles-SameFiles-IfSameWarn.gp.log")
 # Test comparing same files
 # - generate warning when the files are same
 #@expectedStatus Warning

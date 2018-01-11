@@ -6,8 +6,11 @@ set GP=../../../../owf-app-geoprocessor-python/scripts/gp.bat
 
 rem %GP% --commands ../../commands/CopyFile/test-CopyFile.gp
 rem %GP% --commands ../../commands/Message/test-Message.gp
+rem %GP% --commands ../../commands/SetProperty/test-SetGeoLayerProperty.gp
+%GP% --commands ../../commands/SetProperty/test-SetProperty.gp
+rem %GP% --commands ../../commands/SetProperty/test-SetPropertyFromGeoLayer.gp
 rem %GP% --commands ../../commands/StartLog/test-StartLog.gp
-%GP% --commands ../../commands/RemoveFile/test-RemoveFile.gp
+rem %GP% --commands ../../commands/RemoveFile/test-RemoveFile.gp
 rem %GP% --commands ../../commands/CompareFiles/test-CompareFiles-DifferentFiles-IfDifferentWarn.gp
 rem %GP% --commands ../../commands/CompareFiles/test-CompareFiles-DifferentFiles-IfDifferentIgnore.gp
 rem %GP% --commands ../../commands/CompareFiles/test-CompareFiles-SameFiles-IfSameIgnore.gp
