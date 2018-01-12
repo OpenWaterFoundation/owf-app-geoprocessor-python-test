@@ -9,6 +9,6 @@ RemoveFile(SourceFile="results/test-ReadGeoLayerFromGeoJSON-Line-AllowedDiffCoun
 # Read the line GeoJSON (with GeoLayerID of "line") into the GeoProcessor 
 ReadGeoLayerFromGeoJSON(SpatialDataFile="data/line.geojson", GeoLayerID="line")
 # Write the line Geolayer to a GeoJSON file 
-WriteGeoLayerToGeoJSON(GeoLayerID="line", OutputFolder="results", OutputFilename="test-ReadGeoLayerFromGeoJSON-Line-AllowedDiffCount2-out")
+WriteGeoLayerToGeoJSON(GeoLayerID="line", OutputFile="results/test-ReadGeoLayerFromGeoJSON-Line-AllowedDiffCount2-out")
 # Compare the results to the expected results
 CompareFiles(InputFile1="data/line.geojson", InputFile2="results/test-ReadGeoLayerFromGeoJSON-Line-AllowedDiffCount2-out.geojson",AllowedDiffCount="2",IfDifferent="Warn")
