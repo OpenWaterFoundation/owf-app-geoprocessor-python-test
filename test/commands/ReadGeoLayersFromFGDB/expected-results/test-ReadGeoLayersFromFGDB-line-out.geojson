@@ -1,0 +1,8 @@
+{
+"type": "FeatureCollection",
+"name": "test-ReadGeoLayersFromFGDB-line-out",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "OBJECTID": 1, "id": 1, "Shape_Length": 0.64769117822487421 }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -1.85291, 0.37367 ], [ -1.33333, 0.76038 ], [ -1.33333, 0.76038 ] ] ] } }
+]
+}
