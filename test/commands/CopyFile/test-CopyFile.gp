@@ -1,6 +1,6 @@
 StartLog(LogFile="results/test-CopyFile.gp.log")
 # Test copying a file
-RemoveFile(InputFile="results/test-CopyFile-out.txt")
+RemoveFile(SourceFile="results/test-CopyFile-out.txt",IfSourceFileNotFound="Ignore")
 # Uncomment the following line to regenerate expected results
 CopyFile(SourceFile="data/testfile.txt",DestinationFile="expected-results/test-CopyFile-out.txt")
 CopyFile(SourceFile="data/testfile.txt",DestinationFile="results/test-CopyFile-out.txt")
