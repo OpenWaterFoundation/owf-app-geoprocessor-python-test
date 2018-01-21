@@ -18,8 +18,9 @@ rem %GP% --commands ../../commands/Message/test-Message.gp
 rem %GP% --commands ../../commands/RemoveFile/test-RemoveFile.gp
 rem %GP% --commands ../../commands/SetGeoLayerProperty/test-SetGeoLayerProperty.gp
 rem %GP% --commands ../../commands/SetProperty/test-SetProperty.gp
-%GP% --commands ../../commands/SetPropertyFromGeoLayer/test-SetPropertyFromGeoLayer.gp
+rem %GP% --commands ../../commands/SetPropertyFromGeoLayer/test-SetPropertyFromGeoLayer.gp
 rem %GP% --commands ../../commands/StartLog/test-StartLog.gp
+rem %GP% --commands ../../commands/WriteGeoLayerPropertiesToFile/test-WriteGeoLayerPropertiesToFile-IncludeProperties-NameValue-Ascending.gp
 rem %GP% --commands ../../commands/WritePropertiesToFile/test-WritePropertiesToFile-IncludeProperties-NameTypeValue-Ascending.gp
 rem %GP% --commands ../../commands/WritePropertiesToFile/test-WritePropertiesToFile-IncludeProperties-NameTypeValue-Descending.gp
 rem %GP% --commands ../../commands/WritePropertiesToFile/test-WritePropertiesToFile-IncludeProperties-NameValue-Ascending.gp

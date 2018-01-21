@@ -1,0 +1,4 @@
+TestWriteGeoLayerPropertiesToFile_bool=True
+TestWriteGeoLayerPropertiesToFile_float=1.2345
+TestWriteGeoLayerPropertiesToFile_int=12345
+TestWriteGeoLayerPropertiesToFile_str="Test string value"
