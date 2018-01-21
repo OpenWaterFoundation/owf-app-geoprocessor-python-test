@@ -1,0 +1,5 @@
+ZZZBoolProp=True
+ZZZFloatProp=1.2345
+ZZZIntProp=12345
+ZZZStrProp="A string"
+ZZZStrProp2="A second string"

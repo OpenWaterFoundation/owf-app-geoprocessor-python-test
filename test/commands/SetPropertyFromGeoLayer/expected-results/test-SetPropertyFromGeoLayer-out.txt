@@ -1,0 +1,4 @@
+TestSetPropertyFromGeoLayer_bool=True
+TestSetPropertyFromGeoLayer_float=1.2345
+TestSetPropertyFromGeoLayer_int=12345
+TestSetPropertyFromGeoLayer_str="Test string value"
