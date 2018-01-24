@@ -62,5 +62,5 @@
 ![QGIS-AddFeature-Line](../../../images/QGIS-AddFeature-Line.PNG)
 ### Add Feature Button - `POLYGON`
 ![QGIS-AddFeature-Polygon](../../../images/QGIS-AddFeature-Polygon.PNG)
-### Add Field Button
+### New Field Button
 ![QGIS-NewField](../../../images/QGIS-NewField.PNG)
