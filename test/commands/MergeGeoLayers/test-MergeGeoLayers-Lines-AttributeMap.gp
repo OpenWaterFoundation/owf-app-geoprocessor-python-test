@@ -19,3 +19,7 @@ MergeGeoLayers(GeoLayerIDs="station_state, StatName_StateName", OutputGeoLayerID
 WriteGeoLayerToGeoJSON(GeoLayerID="merged", OutputFile="results/test-MergeGeoLayers-Lines-AttributeMap-out")
 # Compare the results to the expected results
 CompareFiles(InputFile1="expected-results/test-MergeGeoLayers-Lines-AttributeMap-out.geojson", InputFile2="results/test-MergeGeoLayers-Lines-AttributeMap-out.geojson", IfDifferent="Warn")
+# Free the active GeoLayers so that they do not interfere with other tests
+FreeGeoLayer(GeoLayerID = "station_state")
+FreeGeoLayer(GeoLayerID = "StatName_StateName")
+FreeGeoLayer(GeoLayerID = "merged")
