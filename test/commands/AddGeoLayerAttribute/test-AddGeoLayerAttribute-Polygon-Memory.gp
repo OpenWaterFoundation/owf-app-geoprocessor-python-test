@@ -14,12 +14,12 @@ CopyGeoLayer(GeoLayerID="polygon")
 # Add the `addTest` attribute value to GeoLayer "polygon".
 AddGeoLayerAttribute(GeoLayerID="polygon_copy", AttributeName="addTest", AttributeType="string")
 # Uncomment the next 6 lines to reproduce the expected results
-WriteGeoLayerToShapefile(GeoLayerID="polygon_copy", OutputFile="expected-results/test-AddGeoLayerAttribute-Polygon-Memory-out")
-RemoveFile(SourceFile="expected-results/test-AddGeoLayerAttribute-Polygon-Memory-out.cpg", IfSourceFileNotFound="Ignore")
-RemoveFile(SourceFile="expected-results/test-AddGeoLayerAttribute-Polygon-Memory-out.prj", IfSourceFileNotFound="Ignore")
-RemoveFile(SourceFile="expected-results/test-AddGeoLayerAttribute-Polygon-Memory-out.qpj", IfSourceFileNotFound="Ignore")
-RemoveFile(SourceFile="expected-results/test-AddGeoLayerAttribute-Polygon-Memory-out.shp", IfSourceFileNotFound="Ignore")
-RemoveFile(SourceFile="expected-results/test-AddGeoLayerAttribute-Polygon-Memory-out.shx", IfSourceFileNotFound="Ignore")
+#WriteGeoLayerToShapefile(GeoLayerID="polygon_copy", OutputFile="expected-results/test-AddGeoLayerAttribute-Polygon-Memory-out")
+#RemoveFile(SourceFile="expected-results/test-AddGeoLayerAttribute-Polygon-Memory-out.cpg", IfSourceFileNotFound="Ignore")
+#RemoveFile(SourceFile="expected-results/test-AddGeoLayerAttribute-Polygon-Memory-out.prj", IfSourceFileNotFound="Ignore")
+#RemoveFile(SourceFile="expected-results/test-AddGeoLayerAttribute-Polygon-Memory-out.qpj", IfSourceFileNotFound="Ignore")
+#RemoveFile(SourceFile="expected-results/test-AddGeoLayerAttribute-Polygon-Memory-out.shp", IfSourceFileNotFound="Ignore")
+#RemoveFile(SourceFile="expected-results/test-AddGeoLayerAttribute-Polygon-Memory-out.shx", IfSourceFileNotFound="Ignore")
 # Write the in-memory polygon Geolayer to a GeoJSON file 
 WriteGeoLayerToShapefile(GeoLayerID="polygon_copy", OutputFile="results/test-AddGeoLayerAttribute-Polygon-Memory-out")
 # Compare the results to the expected results

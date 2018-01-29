@@ -4,6 +4,7 @@ StartLog(LogFile="results/test-MergeGeoLayers-Lines-Point-ExpectFail.gp.log")
 #	- the second input GeoLayer is a single-feature POINT GeoJSON file.
 # 	- the test should FAIL becasue GeoLayers of difference geometries cannot merged
 #	- a local FAIL is a global PASS
+#@expectedStatus Failure
 # Read both GeoJSONs into the GeoProcessor 
 ReadGeoLayerFromGeoJSON(SpatialDataFile="data/point.geojson", GeoLayerID="point")
 ReadGeoLayerFromGeoJSON(SpatialDataFile="data/lines_StatName_StateName.geojson", GeoLayerID="lines")

@@ -3,6 +3,7 @@ StartLog(LogFile="results/test-WebGet-NonDownloadableFile-ExpectFail.gp.log")
 #	- the file is not a zip file
 # 	- becuase the FileURL does not point to a file that can be downloaded, the test SHOULD FAIL when trying to download it with the WebGet command
 #	- the test will pass globally if it fails locally
+#@expectedStatus Failure
 # Remove the downloadable file from the last run of the test, if existing
 RemoveFile(SourceFile="results/test-WebGet-NonDownloadableFile-ExpectFail-out.cpg", IfSourceFileNotFound="Ignore")
 # Get the downloadable file from the web
