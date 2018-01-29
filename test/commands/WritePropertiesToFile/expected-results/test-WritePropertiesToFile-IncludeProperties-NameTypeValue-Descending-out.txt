@@ -1,5 +1,5 @@
-ZZZStrProp="A string"
 ZZZStrProp2="A second string"
+ZZZStrProp="A string"
 ZZZIntProp=12345
 ZZZFloatProp=1.2345
 ZZZBoolProp=True
