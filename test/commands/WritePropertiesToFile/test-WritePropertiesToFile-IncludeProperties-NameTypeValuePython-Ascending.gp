@@ -3,6 +3,8 @@
 # - Use IncludeProperties and a wildcard to constrain the properties being written
 # - Property names are listed in order that is not sorted
 # - Sort Ascending
+# - Disable until Python output can be implemented
+#@enabled False
 StartLog(LogFile="results/test-WritePropertiesToFile-IncludeProperties-NameTypeValuePython-Ascending.gp.log")
 RemoveFile(SourceFile="results/test-WritePropertiesToFile-IncludeProperties-NameTypeValuePython-Ascending-out.txt",IfSourceFileNotFound="Ignore")
 #SetProperty(PropertyName="ZZZDateTimeProp",PropertyType="DateTime",PropertyValue="2012-01-01")

@@ -6,3 +6,12 @@
 
 # Ignore Microsoft Office temporary files
 ~$*
+
+# Ignore log files globally
+*.log
+
+# Ignore automated test files that are created by each developer
+test/suites/run/*out*
+test/suites/run/geoprocessor-tests.gp
+test/suites/run/geoprocessor-tests.gp.out.txt
+test/suites/run/geoprocessor-tests.gp.summary.html
