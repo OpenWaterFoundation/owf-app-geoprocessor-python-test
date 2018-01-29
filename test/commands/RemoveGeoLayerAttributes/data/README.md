@@ -1,9 +1,9 @@
-# RemoveGeoLayerAttribute Data
+# RemoveGeoLayerAttributes Data
 
 |Data|Description|Source|How To Recreate|
 |---|-----|-----|----|
-|`line.geojson`|A single feature (`LINE`) GeoJSON file. (Projected in WGS84 - `EPSG:4326`). |Manually created using QGIS Desktop.| See step-by-step instructions below (created the GeoJSON and added attribute `toRemove` with data type `Text (string)`).|
-|`lines.geojson`|A multiple feature (`LINE`) GeoJSON file. (Projected in WGS84 - `EPSG:4326`). |Manually created using QGIS Desktop.| See step-by-step instructions below (created the GeoJSON and added attribute `toRemove` with data type `Text (string)`).|
+|`line.geojson`|A single feature (`LINE`) GeoJSON file. (Projected in WGS84 - `EPSG:4326`). Three attribute fields (`id`, `toRemove` and `toRemove2`).|Manually created using QGIS Desktop.| See step-by-step instructions below (created the GeoJSON and added attribute `toRemove` with data type `Text (string)`).|
+|`lines.geojson`|A multiple feature (`LINE`) GeoJSON file. (Projected in WGS84 - `EPSG:4326`). Three attribute fields (`id`, `toRemove` and `toRemove2`).|Manually created using QGIS Desktop.| See step-by-step instructions below (created the GeoJSON and added attribute `toRemove` with data type `Text (string)`).|
 
 
 # Creating a GeoJSON File in QGIS Desktop
