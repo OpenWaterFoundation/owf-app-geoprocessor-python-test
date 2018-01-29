@@ -9,6 +9,6 @@ RemoveFile(SourceFile="results/test-ReadGeoLayerFromGeoJSON-Polygon-AllowedDiffC
 # Read the polygon GeoJSON (with GeoLayerID of "polygon") into the GeoProcessor 
 ReadGeoLayerFromGeoJSON(SpatialDataFile="data/polygon.geojson", GeoLayerID="polygon")
 # Write the polygon Geolayer to a GeoJSON file 
-WriteGeoLayerToGeoJSON(GeoLayerID="polygon", OutputFolder="results", OutputFilename="test-ReadGeoLayerFromGeoJSON-Polygon-AllowedDiffCount2-out")
+WriteGeoLayerToGeoJSON(GeoLayerID="polygon", OutputFile="results/test-ReadGeoLayerFromGeoJSON-Polygon-AllowedDiffCount2-out")
 # Compare the results to the expected results
 CompareFiles(InputFile1="data/polygon.geojson", InputFile2="results/test-ReadGeoLayerFromGeoJSON-Polygon-AllowedDiffCount2-out.geojson",AllowedDiffCount="2",IfDifferent="Warn")

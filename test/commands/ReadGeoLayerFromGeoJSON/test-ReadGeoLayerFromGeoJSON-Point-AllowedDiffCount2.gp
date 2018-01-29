@@ -9,6 +9,6 @@ RemoveFile(SourceFile="results/test-ReadGeoLayerFromGeoJSON-Point-AllowedDiffCou
 # Read the point GeoJSON (with GeoLayerID of "point") into the GeoProcessor 
 ReadGeoLayerFromGeoJSON(SpatialDataFile="data/point.geojson", GeoLayerID="point")
 # Write the point Geolayer to a GeoJSON file 
-WriteGeoLayerToGeoJSON(GeoLayerID="point", OutputFolder="results", OutputFilename="test-ReadGeoLayerFromGeoJSON-Point-AllowedDiffCount2-out")
+WriteGeoLayerToGeoJSON(GeoLayerID="point", OutputFile="results/test-ReadGeoLayerFromGeoJSON-Point-AllowedDiffCount2-out")
 # Compare the results to the expected results
 CompareFiles(InputFile1="data/point.geojson", InputFile2="results/test-ReadGeoLayerFromGeoJSON-Point-AllowedDiffCount2-out.geojson",AllowedDiffCount="2",IfDifferent="Warn")
