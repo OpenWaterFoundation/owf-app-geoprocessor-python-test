@@ -9,6 +9,9 @@
 *.jpg binary
 
 # GIS files
+*.dbf binary
+*.shp binary
+*.shx binary
 
 # Microsoft files
 *.xlsx binary
