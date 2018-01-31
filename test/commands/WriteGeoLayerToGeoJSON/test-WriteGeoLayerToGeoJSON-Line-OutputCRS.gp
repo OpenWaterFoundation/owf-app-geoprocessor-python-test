@@ -8,7 +8,7 @@ RemoveFile(SourceFile="results/test-WriteGeoLayerToGeoJSON-Line-OutputCRS-out.ge
 # Read the line GeoJSON (with GeoLayerID of "line") into the GeoProcessor 
 ReadGeoLayerFromGeoJSON(SpatialDataFile="data/line.geojson", GeoLayerID="line")
 # Uncomment below line to recreate expected results
-# WriteGeoLayerToGeoJSON(GeoLayerID="line", OutputFile="expected-results/test-WriteGeoLayerToGeoJSON-Line-OutputCRS-out", OutputCRS="ESRI:102003")
+#WriteGeoLayerToGeoJSON(GeoLayerID="line", OutputFile="expected-results/test-WriteGeoLayerToGeoJSON-Line-OutputCRS-out", OutputCRS="ESRI:102003")
 # Write the line Geolayer to a GeoJSON file 
 WriteGeoLayerToGeoJSON(GeoLayerID="line", OutputFile="results/test-WriteGeoLayerToGeoJSON-Line-OutputCRS-out", OutputCRS="ESRI:102003")
 # Compare the results to the expected results

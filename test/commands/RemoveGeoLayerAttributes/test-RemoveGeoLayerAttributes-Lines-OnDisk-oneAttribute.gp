@@ -10,7 +10,7 @@ CopyFile(SourceFile="data/lines.geojson", DestinationFile="data/lines_copy.geojs
 ReadGeoLayerFromGeoJSON(SpatialDataFile="data/lines_copy.geojson", GeoLayerID="lines")
 # Remove the `toRemove` attribute value from GeoLayer "lines".
 RemoveGeoLayerAttributes(GeoLayerID="lines", AttributeNames="toRemove")
-# Uncomment the next lines to reproduce the expected results
+# Uncomment the next line to reproduce the expected results
 #WriteGeoLayerToGeoJSON(GeoLayerID="lines", OutputFile="expected-results/test-RemoveGeoLayerAttributes-Lines-OnDisk-oneAttribute-out")
 # Write the lines Geolayer to a GeoJSON file 
 WriteGeoLayerToGeoJSON(GeoLayerID="lines", OutputFile="results/test-RemoveGeoLayerAttributes-Lines-OnDisk-oneAttribute-out")

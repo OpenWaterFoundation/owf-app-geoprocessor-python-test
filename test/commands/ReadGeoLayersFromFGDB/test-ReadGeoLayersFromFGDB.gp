@@ -7,7 +7,7 @@ RemoveFile(SourceFile="results/test-ReadGeoLayersFromFGDB-line-out.geojson", IfS
 RemoveFile(SourceFile="results/test-ReadGeoLayersFromFGDB-polygon-out.geojson", IfSourceFileNotFound="Ignore")
 # Read all available GeoLayers from the file geodatabase
 ReadGeoLayersFromFGDB(SpatialDataFolder="data/ReadGeoLayersFromFGDB-test.gdb")
-# Uncomment the next three lines to reproduce the expected results
+# Uncomment the next 3 lines to reproduce the expected results
 #WriteGeoLayerToGeoJSON(GeoLayerID="point", OutputFile="expected-results/test-ReadGeoLayersFromFGDB-point-out")
 #WriteGeoLayerToGeoJSON(GeoLayerID="line", OutputFile="expected-results/test-ReadGeoLayersFromFGDB-line-out")
 #WriteGeoLayerToGeoJSON(GeoLayerID="polygon", OutputFile="expected-results/test-ReadGeoLayersFromFGDB-polygon-out")

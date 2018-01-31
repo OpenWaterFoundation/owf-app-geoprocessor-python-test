@@ -8,7 +8,7 @@ RemoveFile(SourceFile="results/test-WriteGeoLayerToGeoJSON-Line-OutputPrecision-
 # Read the line GeoJSON (with GeoLayerID of "line") into the GeoProcessor 
 ReadGeoLayerFromGeoJSON(SpatialDataFile="data/line.geojson", GeoLayerID="line")
 # Uncomment below line to recreate expected results
-# WriteGeoLayerToGeoJSON(GeoLayerID="line", OutputFile="expected-results/test-WriteGeoLayerToGeoJSON-Line-OutputPrecision-out", OutputPrecision="3")
+#WriteGeoLayerToGeoJSON(GeoLayerID="line", OutputFile="expected-results/test-WriteGeoLayerToGeoJSON-Line-OutputPrecision-out", OutputPrecision="3")
 # Write the line Geolayer to a GeoJSON file 
 WriteGeoLayerToGeoJSON(GeoLayerID="line", OutputFile="results/test-WriteGeoLayerToGeoJSON-Line-OutputPrecision-out", OutputPrecision="3")
 # Compare the results to the expected results
