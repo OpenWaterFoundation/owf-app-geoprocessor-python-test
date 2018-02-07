@@ -3,10 +3,9 @@
 |Data|Description|Source|How To Recreate|
 |---|-----|-----|----|
 |`line.geojson`|A single feature (`LINE`) GeoJSON file. (Projected in WGS84 - `EPSG:4326`). |Manually created using QGIS Desktop.| See step-by-step instructions below.|
-|`point.geojson`|A single feature (`POINT`) GeoJSON file. (Projected in WGS84 - `EPSG:4326`).|Manually created using QGIS Desktop.| See step-by-step instructions below.|
-|`polygon.geojson`|A single feature (`POLYGON`) GeoJSON file. (Projected in WGS84 - `EPSG:4326`).|Manually created using QGIS Desktop.| See step-by-step instructions below.|
+|`points.geojson`|A multi-feature (`POINTS`) GeoJSON file. (Projected in WGS84 - `EPSG:4326`). Attributes include `id` and `Keep_Field`. `Keep_Field` is filled with randomly assigned `Y` and `N` values.|Manually created using QGIS Desktop.| See step-by-step instructions below.|
 
-# Creating a GeoJSON File in QGIS Desktop
+# Creating a GeoJSON File in QGIS Desktop (Adding Multiple Features and Multiple Attributes)
 
 | |		|
 |-|----|
@@ -25,13 +24,16 @@
 |13|Click the `Add Feature` button in the top menu bar. It should look something like one of the images in `Appendix A`.|
 |14|Click on the QGIS main screen. This will allow the creation of a `POINT`, `LINE` or `POLYGON`.|
 |15|The `Feature Attributes` window will appear. Enter `1` for the `id`. Click `OK`.|
-|16|Right-click on the layer in the `Layers Panel`. Click `Toggle Editing`.|
-|17|The `Stop editing` window will appear. Click `Save`. The shapefile now has one feature.|
-|18|Right-click on the layer in the `Layers Panel`. Click `Save as...`.|
-|19|The `Save vector layer as...` window will appear.|
-|20|In the `Format` drop down menu, select `GeoJSON`.|
-|21|Click the `Browse` button. Browse to the appropriate `test/data` folder.  Give the file an appropriate name (`POINT`, `LINE`, or `POLYGON` are suggested).|
-|22|Click `OK`.|
+|16|Right-click on the layer in the `Layers Panel`. Click `Open Attribute Table`. The `Attribute Table` windown will appear.|
+|17|Click the `Add Field` button (shown in `Appendix A`). <br> The `Add Field` window will appear. <br> Enter an attribute name in the box next to `Name`. <br> Select the attribute type in the drop down next to `Type`. <br> Enter an appropriate attribute length in the box next to `Length`. <br> Click `OK`.|
+|18| The new attribute will be added to the attribute table. <br> Click each attribute box under the new attribute field and enter appropriate values. <br> Close the attribute table.|
+|19|Right-click on the layer in the `Layers Panel`. Click `Toggle Editing`.|
+|20|The `Stop editing` window will appear. Click `Save`. The shapefile now has one feature.|
+|20|Right-click on the layer in the `Layers Panel`. Click `Save as...`.|
+|22|The `Save vector layer as...` window will appear.|
+|23|In the `Format` drop down menu, select `GeoJSON`.|
+|24|Click the `Browse` button. Browse to the appropriate `test/data` folder.  Give the file an appropriate name.|
+|25|Click `OK`.|
 
 ## Appendix A
 
@@ -41,3 +43,5 @@
 ![QGIS-AddFeature-Line](../../../images/QGIS-AddFeature-Line.PNG)
 ### Add Feature Button - `POLYGON`
 ![QGIS-AddFeature-Polygon](../../../images/QGIS-AddFeature-Polygon.PNG)
+### Add Field Button 
+![QGIS-AddField-Polygon](../../../images/QGIS-NewField.PNG)
