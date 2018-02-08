@@ -5,4 +5,4 @@ StartLog(LogFile="results/test-ReadGeoLayerFromDelimitedFile-Points-InvalidYColu
 # - testing that a FAILURE log is raised when the YColumnName is not a valid column name
 #@expectedStatus Failure
 # Read the POINTS delimited file (with GeoLayerID of "points") into the GeoProcessor 
-ReadGeoLayerFromDelimitedFile(DelimitedFile="data/points-XY.csv", Delimiter=",", GeometryType="XY", XColumnName="X", YColumnName="Invalid", CRS="EPSG:4326", GeoLayerID = "points")
+ReadGeoLayerFromDelimitedFile(DelimitedFile="data/points-XY.csv", Delimiter=",", GeometryFormat="XY", XColumn="X", YColumn="Invalid", CRS="EPSG:4326", GeoLayerID = "points")

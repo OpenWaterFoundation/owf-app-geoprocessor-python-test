@@ -6,7 +6,7 @@ StartLog(LogFile="results/test-ReadGeoLayerFromDelimitedFile-Polygon.gp.log")
 # Remove the result line geojson file from the last run of the test, if existing
 RemoveFile(SourceFile="results/test-ReadGeoLayerFromDelimitedFile-Polygon-out.geojson", IfSourceFileNotFound="Ignore")
 # Read the POLYGON delimited file (with GeoLayerID of "polygon") into the GeoProcessor 
-ReadGeoLayerFromDelimitedFile(DelimitedFile="data/polygon-WKT.csv", Delimiter=";", GeometryType="WKT", WKTColumnName="WKT", CRS="EPSG:4326", GeoLayerID = "polygon")
+ReadGeoLayerFromDelimitedFile(DelimitedFile="data/polygon-WKT.csv", Delimiter=";", GeometryFormat="WKT", WKTColumn="WKT", CRS="EPSG:4326", GeoLayerID = "polygon")
 # Uncomment below line to recreate expected results
 #WriteGeoLayerToGeoJSON(GeoLayerID="polygon", OutputFile="expected-results/test-ReadGeoLayerFromDelimitedFile-Polygon-out")
 # Write the line Geolayer to a GeoJSON file 

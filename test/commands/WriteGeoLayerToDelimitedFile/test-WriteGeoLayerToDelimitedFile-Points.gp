@@ -7,8 +7,8 @@ RemoveFile(SourceFile="results/test-WriteGeoLayerToDelimitedFile-Points-out.geoj
 # Read the POINTS GeoJSON (with GeoLayerID of "points") into the GeoProcessor 
 ReadGeoLayerFromGeoJSON(SpatialDataFile="data/points.geojson", GeoLayerID="points")
 # Uncomment below line to recreate expected results
-#WriteGeoLayerToDelimitedFile(GeoLayerID="points", OutputFile="expected-results/test-WriteGeoLayerToDelimitedFile-Points-out")
+#WriteGeoLayerToDelimitedFile(GeoLayerID="points", OutputFile="expected-results\test-WriteGeoLayerToDelimitedFile-Points-out")
 # Write the line Geolayer to a GeoJSON file 
-WriteGeoLayerToDelimitedFile(GeoLayerID="points", OutputFile="results/test-WriteGeoLayerToDelimitedFile-Points-out")
+WriteGeoLayerToDelimitedFile(GeoLayerID="points", OutputFile="results\test-WriteGeoLayerToDelimitedFile-Points-out")
 # Compare the results to the expected results
 CompareFiles(InputFile1="expected-results/test-WriteGeoLayerToDelimitedFile-Points-out.csv", InputFile2="results/test-WriteGeoLayerToDelimitedFile-Points-out.csv", IfDifferent="Warn")

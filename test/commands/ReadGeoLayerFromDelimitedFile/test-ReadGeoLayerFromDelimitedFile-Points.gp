@@ -5,7 +5,7 @@ StartLog(LogFile="results/test-ReadGeoLayerFromDelimitedFile-Points.gp.log")
 # Remove the result line geojson file from the last run of the test, if existing
 RemoveFile(SourceFile="results/test-ReadGeoLayerFromDelimitedFile-Points-out.geojson", IfSourceFileNotFound="Ignore")
 # Read the POINTS delimited file (with GeoLayerID of "points") into the GeoProcessor 
-ReadGeoLayerFromDelimitedFile(DelimitedFile="data/points-XY.csv", Delimiter=",", GeometryType="XY", XColumnName="X", YColumnName="Y", CRS="EPSG:4326", GeoLayerID = "points")
+ReadGeoLayerFromDelimitedFile(DelimitedFile="data/points-XY.csv", Delimiter=",", GeometryFormat="XY", XColumn="X", YColumn="Y", CRS="EPSG:4326", GeoLayerID = "points")
 # Uncomment below line to recreate expected results
 #WriteGeoLayerToGeoJSON(GeoLayerID="points", OutputFile="expected-results/test-ReadGeoLayerFromDelimitedFile-Points-out")
 # Write the line Geolayer to a GeoJSON file 
