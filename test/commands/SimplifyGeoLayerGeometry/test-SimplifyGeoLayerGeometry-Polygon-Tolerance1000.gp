@@ -7,13 +7,11 @@ StartLog(LogFile="results/test-SimplifyGeoLayerGeometry-Polygon-Tolerance1000.gp
 RemoveFile(SourceFile="results/test-SimplifyGeoLayerGeometry-Polygon-Tolerance1000-out.geojson", IfSourceFileNotFound="Ignore")
 # Read the polygon GeoJSON (with GeoLayerID of "SummitCounty") into the GeoProcessor 
 ReadGeoLayerFromGeoJSON(SpatialDataFile="data/polygon_summit_co_nad83_utm_z13n.geojson", GeoLayerID="SummitCounty")
-# Copy the GeoLayer. 
-CopyGeoLayer(GeoLayerID = "SummitCounty")
 # Simplify the GeoLayer to a tolerance level of 1000 meters. 
-SimplifyGeoLayerGeometry(GeoLayerID = "SummitCounty_copy", Tolerance="1000")
+SimplifyGeoLayerGeometry(GeoLayerID = "SummitCounty", Tolerance="1000")
 # Uncomment the line below to recreate the expected results
-#WriteGeoLayerToGeoJSON(GeoLayerID="SummitCounty_copy", OutputFile="expected-results/test-SimplifyGeoLayerGeometry-Polygon-Tolerance1000-out")
+#WriteGeoLayerToGeoJSON(GeoLayerID="SummitCounty_simple_1000", OutputFile="expected-results/test-SimplifyGeoLayerGeometry-Polygon-Tolerance1000-out")
 # Write the copied Geolayer to a GeoJSON file 
-WriteGeoLayerToGeoJSON(GeoLayerID="SummitCounty_copy", OutputFile="results/test-SimplifyGeoLayerGeometry-Polygon-Tolerance1000-out")
+WriteGeoLayerToGeoJSON(GeoLayerID="SummitCounty_simple_1000", OutputFile="results/test-SimplifyGeoLayerGeometry-Polygon-Tolerance1000-out")
 # Compare the results to the expected results.
 CompareFiles(InputFile1="expected-results/test-SimplifyGeoLayerGeometry-Polygon-Tolerance1000-out.geojson", InputFile2="results/test-SimplifyGeoLayerGeometry-Polygon-Tolerance1000-out.geojson",IfDifferent="Warn")
