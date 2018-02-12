@@ -16,12 +16,14 @@ rem call %GP% --commands ../../commands/CompareFiles/test-CompareFiles-1Diff-All
 rem call %GP% --commands ../../commands/CopyFile/test-CopyFile.gp
 rem call %GP% --commands ../../commands/Message/test-Message.gp
 rem call %GP% --commands ../../commands/RemoveFile/test-RemoveFile.gp
+call %GP% --commands ../../commands/RunProgram/test-RunProgram-cat.gp
 rem call %GP% --commands ../../commands/SetGeoLayerProperty/test-SetGeoLayerProperty.gp
 rem call %GP% --commands ../../commands/SetProperty/test-SetProperty.gp
 rem call %GP% --commands ../../commands/SetPropertyFromGeoLayer/test-SetPropertyFromGeoLayer.gp
 rem call %GP% --commands ../../commands/StartLog/test-StartLog.gp
 rem call %GP% --commands ../../commands/WriteGeoLayerPropertiesToFile/test-WriteGeoLayerPropertiesToFile-IncludeProperties-NameValue-Ascending.gp
+rem call %GP% --commands ../../commands/WriteGeoLayerToGeoJSON/test-WriteGeoLayerToGeoJSON-Line-OutputPrecision.gp
 rem call %GP% --commands ../../commands/WritePropertiesToFile/test-WritePropertiesToFile-IncludeProperties-NameTypeValue-Ascending.gp
-call %GP% --commands ../../commands/WritePropertiesToFile/test-WritePropertiesToFile-IncludeProperties-NameTypeValue-Descending.gp
+rem call %GP% --commands ../../commands/WritePropertiesToFile/test-WritePropertiesToFile-IncludeProperties-NameTypeValue-Descending.gp
 rem call %GP% --commands ../../commands/WritePropertiesToFile/test-WritePropertiesToFile-IncludeProperties-NameTypeValuePython-Ascending.gp
 rem call %GP% --commands ../../commands/WritePropertiesToFile/test-WritePropertiesToFile-IncludeProperties-NameValue-Ascending.gp

@@ -1,0 +1,2 @@
+test-file.txt
+This is a simple file to test whether cat can create the file.
