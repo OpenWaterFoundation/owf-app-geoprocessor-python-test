@@ -13,12 +13,16 @@ rem call %GP% --commands ../../commands/CompareFiles/test-CompareFiles-SameFiles
 rem call %GP% --commands ../../commands/CompareFiles/test-CompareFiles-SameFiles-IfSameWarn.gp
 rem call %GP% --commands ../../commands/CompareFiles/test-CompareFiles-1Diff-IfDifferentWarn.gp
 rem call %GP% --commands ../../commands/CompareFiles/test-CompareFiles-1Diff-AllowedDiffCount1-IfDifferentWarn.gp
+rem call %GP% --commands ../../commands/For/test-For-Sequence-1-5-1.gp
+rem call %GP% --commands ../../commands/For/test-For-Sequence-1.0-5.0-1.0.gp
+rem call %GP% --commands ../../commands/For/test-For-List-str.gp
+rem call %GP% --commands ../../commands/For/test-For-List-str-Nested.gp
 rem call %GP% --commands ../../commands/CopyFile/test-CopyFile.gp
 rem call %GP% --commands ../../commands/Message/test-Message.gp
 rem call %GP% --commands ../../commands/RemoveFile/test-RemoveFile.gp
-call %GP% --commands ../../commands/RunProgram/test-RunProgram-cat.gp
+rem call %GP% --commands ../../commands/RunProgram/test-RunProgram-cat.gp
 rem call %GP% --commands ../../commands/SetGeoLayerProperty/test-SetGeoLayerProperty.gp
-rem call %GP% --commands ../../commands/SetProperty/test-SetProperty.gp
+call %GP% --commands ../../commands/SetProperty/test-SetProperty.gp
 rem call %GP% --commands ../../commands/SetPropertyFromGeoLayer/test-SetPropertyFromGeoLayer.gp
 rem call %GP% --commands ../../commands/StartLog/test-StartLog.gp
 rem call %GP% --commands ../../commands/WriteGeoLayerPropertiesToFile/test-WriteGeoLayerPropertiesToFile-IncludeProperties-NameValue-Ascending.gp
