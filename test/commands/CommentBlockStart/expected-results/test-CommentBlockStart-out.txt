@@ -1,0 +1,3 @@
+TestSetProperty_float=1.2345
+TestSetProperty_int=12345
+TestSetProperty_str="Test string value"

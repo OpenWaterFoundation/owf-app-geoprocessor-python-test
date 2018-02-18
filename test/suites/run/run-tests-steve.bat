@@ -7,6 +7,7 @@ set GP=..\..\..\..\owf-app-geoprocessor-python\scripts\gp.bat
 
 rem call %GP% --commands ../../commands/Blank/test-Blank.gp
 rem call %GP% --commands ../../commands/Comment/test-Comment.gp
+call %GP% --commands ../../commands/CommentBlockStart/test-CommentBlockStart.gp
 rem call %GP% --commands ../../commands/CompareFiles/test-CompareFiles-DifferentFiles-IfDifferentWarn.gp
 rem call %GP% --commands ../../commands/CompareFiles/test-CompareFiles-DifferentFiles-IfDifferentIgnore.gp
 rem call %GP% --commands ../../commands/CompareFiles/test-CompareFiles-SameFiles-IfSameIgnore.gp
@@ -22,7 +23,7 @@ rem call %GP% --commands ../../commands/Message/test-Message.gp
 rem call %GP% --commands ../../commands/RemoveFile/test-RemoveFile.gp
 rem call %GP% --commands ../../commands/RunProgram/test-RunProgram-cat.gp
 rem call %GP% --commands ../../commands/SetGeoLayerProperty/test-SetGeoLayerProperty.gp
-call %GP% --commands ../../commands/SetProperty/test-SetProperty.gp
+rem call %GP% --commands ../../commands/SetProperty/test-SetProperty.gp
 rem call %GP% --commands ../../commands/SetPropertyFromGeoLayer/test-SetPropertyFromGeoLayer.gp
 rem call %GP% --commands ../../commands/StartLog/test-StartLog.gp
 rem call %GP% --commands ../../commands/WriteGeoLayerPropertiesToFile/test-WriteGeoLayerPropertiesToFile-IncludeProperties-NameValue-Ascending.gp
