@@ -11,6 +11,6 @@ ReadGeoLayerFromShapefile(SpatialDataFile="data/line.shp", GeoLayerID="line")
 # Uncomment below line to recreate expected results - only write zipped file
 #WriteGeoLayerToShapefile(GeoLayerID="line", OutputFile="expected-results/test-WriteGeoLayerToShapefile-Line-ZipOutput-ExpectFail-out", ZipOutput="True")
 # Write the line Geolayer to a Shapefile file - only write zipped file
-WriteGeoLayerToShapefile(GeoLayerID="line", OutputFile="expected-results/test-WriteGeoLayerToShapefile-Line-ZipOutput-ExpectFail-out", ZipOutput="True")
+WriteGeoLayerToShapefile(GeoLayerID="line", OutputFile="results/test-WriteGeoLayerToShapefile-Line-ZipOutput-ExpectFail-out", ZipOutput="True")
 # Compare the results to the expected results
 CompareFiles(InputFile1="results/test-WriteGeoLayerToShapefile-Line-ZipOutput-ExpectFail-out.shp", InputFile2="expected-results/test-WriteGeoLayerToShapefile-Line-ZipOutput-ExpectFail-out.shp",IfDifferent="Warn")
