@@ -1,0 +1,5 @@
+TestForProperty=1.0
+TestForProperty=2.0
+TestForProperty=3.0
+TestForProperty=4.0
+TestForProperty=5.0

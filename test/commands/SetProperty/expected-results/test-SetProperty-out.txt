@@ -1,4 +1,6 @@
 TestSetProperty_bool=True
 TestSetProperty_float=1.2345
 TestSetProperty_int=12345
+TestSetProperty_list_str=['String1', 'String2', 'String3']
+TestSetProperty_list_str_brackets=['String1', 'String2', 'String3']
 TestSetProperty_str="Test string value"
