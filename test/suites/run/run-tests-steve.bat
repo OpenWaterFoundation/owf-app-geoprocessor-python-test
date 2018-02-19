@@ -23,7 +23,8 @@ rem call %GP% --commands ../../commands/For/test-For-Sequence-1.0-5.0-1.0.gp
 rem call %GP% --commands ../../commands/If/test-If-bool.gp
 rem call %GP% --commands ../../commands/If/test-If-float.gp
 rem call %GP% --commands ../../commands/If/test-If-int.gp
-call %GP% --commands ../../commands/If/test-If-nested.gp
+call %GP% --commands ../../commands/If/test-If-int-CompareAsStrings.gp
+rem call %GP% --commands ../../commands/If/test-If-nested.gp
 rem call %GP% --commands ../../commands/If/test-If-str.gp
 rem call %GP% --commands ../../commands/Message/test-Message.gp
 rem call %GP% --commands ../../commands/RemoveFile/test-RemoveFile.gp
