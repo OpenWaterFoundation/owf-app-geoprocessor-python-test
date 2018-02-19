@@ -1,0 +1,16 @@
+String_A_LE_A_Test=True
+String_A_LE_PropertyA_Test=True
+String_A_LE_PropertyZ_Test=True
+String_A_LE_Z_Test=True
+String_A_LT_PropertyZ_Test=True
+String_A_LT_Z_Test=True
+String_Z_EQ_PropertyZ_Test=True
+String_Z_EQ_Z_Test=True
+String_Z_GE_A_Test=True
+String_Z_GE_PropertyA_Test=True
+String_Z_GE_PropertyZ_Test=True
+String_Z_GE_Z_Test=True
+String_Z_GT_A_Test=True
+String_Z_GT_PropertyA_Test=True
+String_Z_NE_A_Test=True
+String_Z_NE_PropertyA_Test=True
