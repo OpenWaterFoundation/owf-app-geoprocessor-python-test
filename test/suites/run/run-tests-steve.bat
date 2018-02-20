@@ -1,10 +1,11 @@
 @echo off
 rem Tests to run to test commands.
-rem - This is a simple list - run all or comment out tests as appropriate
-rem - This file will be obsolete when the full test framework is functional
+rem - This is a simple list - run one or more by commenting out tests as appropriate
+rem - This file will be obsolete when the full test framework is functional and via UI
 rem - Redirect to a file if necessary using:  run-tests-steve.bat  > file 2>&1
+rem - Run the developer version of the geoprocessor, to use development Python files.
 
-set GP=..\..\..\..\owf-app-geoprocessor-python\scripts\gp.bat
+set GP=..\..\..\..\owf-app-geoprocessor-python\scripts\gpdev.bat
 
 rem call %GP% --commands ../../commands/Blank/test-Blank.gp
 rem call %GP% --commands ../../commands/Comment/test-Comment.gp
