@@ -106,6 +106,6 @@ If(Name="Check_Integer_1_NE_0",Condition="1 != 0",CompareAsStrings="True")
   Message(Message="1 != 0")
 EndIf(Name="Check_Integer_1_NE_0")
 # Uncomment the next command to regenerate expected results
-WritePropertiesToFile(OutputFile="expected-results/test-If-int-CompareAsStrings-out.txt",IncludeProperties="Integer_*_Test",SortOrder="Ascending")
+#WritePropertiesToFile(OutputFile="expected-results/test-If-int-CompareAsStrings-out.txt",IncludeProperties="Integer_*_Test",SortOrder="Ascending")
 WritePropertiesToFile(OutputFile="results/test-If-int-CompareAsStrings-out.txt",IncludeProperties="Integer_*_Test",SortOrder="Ascending")
 CompareFiles(InputFile1="expected-results/test-If-int-CompareAsStrings-out.txt",InputFile2="results/test-If-int-CompareAsStrings-out.txt",IfDifferent="Warn")

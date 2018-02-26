@@ -2,6 +2,8 @@
 rem Tests to run to test commands.
 rem - This is a simple list - run one or more by commenting out tests as appropriate
 rem - This file will be obsolete when the full test framework is functional and via UI
+rem - Remember to use "call" at the start of each line.
+rem   Otherwise the window will go away when exit is called in the "gp" batch file.
 rem - Redirect to a file if necessary using:  run-tests-steve.bat  > file 2>&1
 rem - Run the developer version of the geoprocessor, to use development Python files.
 
@@ -24,12 +26,12 @@ rem call %GP% --commands ../../commands/For/test-For-Sequence-1.0-5.0-1.0.gp
 rem call %GP% --commands ../../commands/If/test-If-bool.gp
 rem call %GP% --commands ../../commands/If/test-If-float.gp
 rem call %GP% --commands ../../commands/If/test-If-int.gp
-call %GP% --commands ../../commands/If/test-If-int-CompareAsStrings.gp
+rem call %GP% --commands ../../commands/If/test-If-int-CompareAsStrings.gp
 rem call %GP% --commands ../../commands/If/test-If-nested.gp
 rem call %GP% --commands ../../commands/If/test-If-str.gp
 rem call %GP% --commands ../../commands/Message/test-Message.gp
 rem call %GP% --commands ../../commands/RemoveFile/test-RemoveFile.gp
-rem call %GP% --commands ../../commands/RunProgram/test-RunProgram-cat.gp
+call %GP% --commands ../../commands/RunProgram/test-RunProgram-cat.gp
 rem call %GP% --commands ../../commands/SetGeoLayerProperty/test-SetGeoLayerProperty.gp
 rem call %GP% --commands ../../commands/SetProperty/test-SetProperty.gp
 rem call %GP% --commands ../../commands/SetPropertyFromGeoLayer/test-SetPropertyFromGeoLayer.gp
