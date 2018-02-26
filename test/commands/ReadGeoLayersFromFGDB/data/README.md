@@ -51,17 +51,17 @@
 ## Appendix A
 
 ### Connect to Folder Button 
-![Esri-Connect-To-Folder-Btn](../../../images/Esri-Connect-to-Folder-Btn.PNG)
+![Esri-Connect-To-Folder-Button](../../../images/Esri-Connect-to-Folder-Button.PNG)
 
 ### Editor Toolbar Button
-![Esri-Editor-Toolbar-Btn](../../../images/Esri-Editor-Toolbar-Btn.PNG)
+![Esri-Editor-Toolbar-Button](../../../images/Esri-Editor-Toolbar-Button.PNG)
 
 ### Editor Toolbar
 ![Esri-Editor-Toolbar](../../../images/Esri-Editor-Toolbar.PNG)
 
 ### Create Features Button
-![Esri-Create-Features-Btn](../../../images/Esri-Create-Features-Btn.PNG)
+![Esri-Create-Features-Button](../../../images/Esri-Create-Features-Button.PNG)
 
 ### Attributes Button 
-![Esri-Atrributes-Btn](../../../images/Esri-Atrributes-Btn.PNG)
+![Esri-Attributes-Button](../../../images/Esri-Attributes-Button.PNG)
 
