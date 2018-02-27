@@ -10,6 +10,7 @@ which is then run to test the full software functionality.
 	+ `create-test-command-file.bat` - Windows batch file to run the above command file using the GeoProcessor
 		- `create-test-command-file.bat.log` - standard output and error from
 		`create-test-command-file.bat` batch file, redirected to file, ignored in the repository
+	+ `create-test-command-file-dev.bat` - Windows batch file to run the above command file using the GeoProcessor (in the development environment)
 	+ `create-test-command-file.sh` - Linux shell script to run the above command file using the GeoProcessor
 		- `create-test-command-file.sh.log` - standard output and error from
 		`create-test-command-file.sh` script, redirected to file, ignored in the repository
