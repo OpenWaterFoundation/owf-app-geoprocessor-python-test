@@ -1,11 +1,16 @@
 @echo off
 rem Run the command file to create the automated test suite.
+rem - This version uses the geoprocessor (gpdev.bat) configured for the development environment.
+rem - See also create-test-command-file.bat, which should be used in the deployed environment.
 rem - This batch file can be run from the command line.
-rem - If using the UI, just load and run the command file, rather than running this batch file.
+rem - If using the UI, just load and run the command file (create-regression-test-command-file.gp),
+rem   rather than running this batch file.
 
 set GP=..\..\..\..\owf-app-geoprocessor-python\scripts\gpdev.bat
 
 rem Redirect standard output and error to a log file
+rem - This is done because the Python environment and code prints some messages
+rem   to the Windows command shell window beyond what ends up in the GeoProcessor log file
 call %GP% --commands create-regression-test-command-file.gp > create-test-command-file.bat.log 2>&1
 
 echo.
