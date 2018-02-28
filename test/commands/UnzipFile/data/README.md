@@ -4,6 +4,7 @@
 |---|-----|-----|----|
 |`line_geojson.tar`|A tarred file. A single feature (`LINE`) GeoJSON file is within the tar file. GeoJSON is projected in WGS84 - `EPSG:4326`. |Manually created using QGIS Desktop. Manually archived.| See step-by-step instructions below.|
 |`line_geojson.zip`|A zipped file. A single feature (`LINE`) GeoJSON file is within the zipped file. GeoJSON is projected in WGS84 - `EPSG:4326`. |Manually created using QGIS Desktop. Manually archived.| See step-by-step instructions below.|
+|`test-file.txt`|An empty `.txt` file.|Manually created.| See step-by-step instructions below.|
 
 # Creating a GeoJSON File in QGIS Desktop
 
@@ -51,6 +52,14 @@
 |3|In the `Send` section, click the `Zip` button.|
 |4|Type the name that you want for the archive file.|
 |5|Press `Enter`.|
+
+# How to Create an Empty Text File (`.txt`)
+|||
+|-|----|
+|1|Use `File Explorer` to navigate to the folder where the empty text file will "live".|
+|2|Right-click in the `File Explorer` main screen. A pop-up window will appear.|
+|3|Click `New` > `Text Document`|
+|4|Give the file a name.|
 
 
 ## Appendix A

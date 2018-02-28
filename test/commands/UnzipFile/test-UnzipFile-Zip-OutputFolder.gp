@@ -9,11 +9,11 @@ RemoveFile(SourceFile="results/test-UnzipFile-Zip-OutputFolder-out.geojson", IfS
 # Copy the original data file. 
 CopyFile(SourceFile="data/line_geojson.zip", DestinationFile="results/test-UnzipFile-Zip-OutputFolder-in.zip", IfSourceFileNotFound="Fail")
 # Uncomment the next 3 lines to recreate the expected results.
-#UnzipFile(File="results/test-UnzipFile-Zip-OutputFolder-in.zip", OutputFolder="expected-results", DeleteFile="False")
+#UnzipFile(File="results/test-UnzipFile-Zip-OutputFolder-in.zip", OutputFolder="expected-results")
 #CopyFile(SourceFile="expected-results/line.geojson", DestinationFile="expected-results/test-UnzipFile-Zip-OutputFolder-out.geojson")
 #RemoveFile(SourceFile="expected-results/line.geojson")
 # Extract the copied zip file. 
-UnzipFile(File="results/test-UnzipFile-Zip-OutputFolder-in.zip", OutputFolder="results/test-folder")
+UnzipFile(File="results/test-UnzipFile-Zip-OutputFolder-in.zip", OutputFolder="results/test-folder", DeleteFile="True")
 CopyFile(SourceFile="results/test-folder/line.geojson", DestinationFile="results/test-folder/test-UnzipFile-Zip-OutputFolder-out.geojson")
 RemoveFile(SourceFile="results/test-folder/line.geojson")
 # Compare the results to the expected results.
