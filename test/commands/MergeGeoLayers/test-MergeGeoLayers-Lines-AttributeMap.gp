@@ -12,7 +12,7 @@ RemoveFile(SourceFile="results/test-MergeGeoLayers-Lines-AttributeMap-out.geojso
 ReadGeoLayerFromGeoJSON(SpatialDataFile="data/lines_station_state.geojson", GeoLayerID="station_state")
 ReadGeoLayerFromGeoJSON(SpatialDataFile="data/lines_StatName_StateName.geojson", GeoLayerID="StatName_StateName")
 # Merge the two GeoLayers. 
-MergeGeoLayers(GeoLayerIDs="station_state, StatName_StateName", OutputGeoLayerID="merged", AttributeMap="Station= station,StatName; State= state,StateName")
+MergeGeoLayers(GeoLayerIDs="station_state, StatName_StateName", OutputGeoLayerID="merged", AttributeMap="station:Station, StatName:Station, state:State, StateName:State")
 # Uncomment below line to recreate expected results.
 #WriteGeoLayerToGeoJSON(GeoLayerID="merged", OutputFile="expected-results/test-MergeGeoLayers-Lines-AttributeMap-out")
 # Write the merged output GeoLayer to GeoJSON
