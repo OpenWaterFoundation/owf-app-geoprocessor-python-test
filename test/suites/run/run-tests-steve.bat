@@ -31,7 +31,7 @@ rem call %GP% --commands ../../commands/If/test-If-nested.gp
 rem call %GP% --commands ../../commands/If/test-If-str.gp
 rem call %GP% --commands ../../commands/Message/test-Message.gp
 rem call %GP% --commands ../../commands/RemoveFile/test-RemoveFile.gp
-call %GP% --commands ../../commands/RunProgram/test-RunProgram-cat.gp
+call %GP% --commands ../../commands/RunProgram/test-RunProgram-cat.gp -p Property1=Value1
 rem call %GP% --commands ../../commands/SetGeoLayerProperty/test-SetGeoLayerProperty.gp
 rem call %GP% --commands ../../commands/SetProperty/test-SetProperty.gp
 rem call %GP% --commands ../../commands/SetPropertyFromGeoLayer/test-SetPropertyFromGeoLayer.gp

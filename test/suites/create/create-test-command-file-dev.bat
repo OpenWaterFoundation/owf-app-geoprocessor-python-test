@@ -11,7 +11,7 @@ set GP=..\..\..\..\owf-app-geoprocessor-python\scripts\gpdev.bat
 rem Redirect standard output and error to a log file
 rem - This is done because the Python environment and code prints some messages
 rem   to the Windows command shell window beyond what ends up in the GeoProcessor log file
-call %GP% --commands create-regression-test-command-file.gp > create-test-command-file.bat.log 2>&1
+call %GP% --commands create-regression-test-command-file.gp > create-test-command-file-dev.bat.log 2>&1
 
 echo.
 echo See create-regression-test-command-file.bat.log for output from running command file.
