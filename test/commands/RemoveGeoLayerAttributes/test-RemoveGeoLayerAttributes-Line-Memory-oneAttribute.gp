@@ -16,3 +16,8 @@ RemoveGeoLayerAttributes(GeoLayerID="line_copy", AttributeNames="toRemove")
 WriteGeoLayerToGeoJSON(GeoLayerID="line_copy", OutputFile="results/test-RemoveGeoLayerAttributes-Line-Memory-oneAttribute-out")
 # Compare the results to the expected results
 CompareFiles(InputFile1="expected-results/test-RemoveGeoLayerAttributes-Line-Memory-oneAttribute-out.geojson", InputFile2="results/test-RemoveGeoLayerAttributes-Line-Memory-oneAttribute-out.geojson",IfDifferent="Warn")
+# Free the "line" GeoLayer from the GeoProcessor.
+FreeGeoLayer(GeoLayerID="line")
+# Remove the date/line_copy.geojson file from the the testing environment.
+RemoveFile(SourceFile="data/line_copy.geojson", IfSourceFileNotFound="Ignore")
+RemoveFile(SourceFile="data/line_copy.geojson.tmp", IfSourceFileNotFound="Ignore")

@@ -20,3 +20,4 @@ CompareFiles(InputFile1="expected-results/test-RemoveGeoLayerAttributes-Line-OnD
 FreeGeoLayer(GeoLayerID="line")
 # Remove the date/line_copy.geojson file from the the testing environment.
 RemoveFile(SourceFile="data/line_copy.geojson", IfSourceFileNotFound="Ignore")
+RemoveFile(SourceFile="data/line_copy.geojson.tmp", IfSourceFileNotFound="Ignore")
