@@ -1,0 +1,10 @@
+{
+"type": "FeatureCollection",
+"name": "intersect_points",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "id": 1, "Attr": "attr1" }, "geometry": { "type": "Point", "coordinates": [ -105.656271282221397, 39.260659814328449 ] } },
+{ "type": "Feature", "properties": { "id": 2, "Attr": "attr2" }, "geometry": { "type": "Point", "coordinates": [ -106.187132156501633, 38.888528105115398 ] } },
+{ "type": "Feature", "properties": { "id": 3, "Attr": "attr3" }, "geometry": { "type": "Point", "coordinates": [ -105.852037252470922, 39.248314212601002 ] } }
+]
+}

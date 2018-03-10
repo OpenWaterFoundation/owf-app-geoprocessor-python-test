@@ -6,7 +6,6 @@
 { "type": "Feature", "properties": { "id": 1, "low": 2215.0, "lowmod": 5255.0, "lowmoduniv": 15385.0, "lowmod_pct": 0.3416, "cname": "Park", "cname_long": "Park County" }, "geometry": { "type": "LineString", "coordinates": [ [ -106.10092, 38.9387 ], [ -105.97197, 39.01375 ] ] } },
 { "type": "Feature", "properties": { "id": 2, "low": 2215.0, "lowmod": 5255.0, "lowmoduniv": 15385.0, "lowmod_pct": 0.3416, "cname": "Park", "cname_long": "Park County" }, "geometry": { "type": "LineString", "coordinates": [ [ -105.43934, 39.20246 ], [ -105.85204, 39.24831 ] ] } },
 { "type": "Feature", "properties": { "id": 3, "low": 95910.0, "lowmod": 175775.0, "lowmoduniv": 521940.0, "lowmod_pct": 0.3368, "cname": "Jefferson", "cname_long": "Jefferson County" }, "geometry": { "type": "LineString", "coordinates": [ [ -105.37584, 39.12954 ], [ -105.31059, 39.29946 ] ] } },
-{ "type": "Feature", "properties": { "id": 3, "low": 2215.0, "lowmod": 5255.0, "lowmoduniv": 15385.0, "lowmod_pct": 0.3416, "cname": "Park", "cname_long": "Park County" }, "geometry": { "type": "LineString", "coordinates": [ [ -105.47991, 38.85855 ], [ -105.37584, 39.12954 ] ] } },
-{ "type": "Feature", "properties": { "id": 4, "low": 2215.0, "lowmod": 5255.0, "lowmoduniv": 15385.0, "lowmod_pct": 0.3416, "cname": "Park", "cname_long": "Park County" }, "geometry": { "type": "LineString", "coordinates": [ [ -105.69154, 39.38941 ], [ -105.73916, 39.35942 ] ] } }
+{ "type": "Feature", "properties": { "id": 3, "low": 2215.0, "lowmod": 5255.0, "lowmoduniv": 15385.0, "lowmod_pct": 0.3416, "cname": "Park", "cname_long": "Park County" }, "geometry": { "type": "LineString", "coordinates": [ [ -105.47991, 38.85855 ], [ -105.37584, 39.12954 ] ] } }
 ]
 }

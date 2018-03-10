@@ -1,6 +1,10 @@
 StartLog(LogFile="results/test-WebGet-DownloadableZipFile.gp.log")
 # Tests the functionality of the WebGet command with a file that is downloadable
 #	- the file is a zip file
+#	- currently disabled because a SSL connection error occurs when downloading a zip file from GitHub. Downloading a zip file from other sites work (example GeoMAC fire data).
+#@enabled false
+#
+#
 # Remove the downloadable file from the last run of the test, if existing
 RemoveFile(SourceFile="results/test-WebGet-DownloadableZipFile.zip", IfSourceFileNotFound="Ignore")
 # Get the downloadable file from the web
