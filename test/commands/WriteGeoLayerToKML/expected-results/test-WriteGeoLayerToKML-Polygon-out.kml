@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document id="root_doc">
+<Schema name="test_WriteGeoLayerToKML_Polygon_out" id="test_WriteGeoLayerToKML_Polygon_out">
+	<SimpleField name="Name" type="string"></SimpleField>
+	<SimpleField name="Description" type="string"></SimpleField>
+	<SimpleField name="id" type="int"></SimpleField>
+</Schema>
+<Folder><name>test_WriteGeoLayerToKML_Polygon_out</name>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#test_WriteGeoLayerToKML_Polygon_out">
+		<SimpleData name="id">1</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><altitudeMode>clampToGround</altitudeMode><outerBoundaryIs><LinearRing><altitudeMode>clampToGround</altitudeMode><coordinates>-1.54922894424674,0.143534994068802 -1.06287069988138,0.297746144721234 -0.99644128113879,-0.176749703440095 -1.41874258600237,-0.271648873072361 -1.41874258600237,-0.271648873072361 -1.54922894424674,0.143534994068802</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+</Folder>
+</Document></kml>
