@@ -1,33 +1,33 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <kml xmlns="http://www.opengis.net/kml/2.2">
 <Document id="root_doc">
-<Schema name="test_WriteGeoLayerToKML_Points_OutputDescriptionAttribute_out" id="test_WriteGeoLayerToKML_Points_OutputDescriptionAttribute_out">
+<Schema name="test_WriteGeoLayerToKML_Points_PlacemarkNameAttribute_out" id="test_WriteGeoLayerToKML_Points_PlacemarkNameAttribute_out">
 	<SimpleField name="Name" type="string"></SimpleField>
 	<SimpleField name="Description" type="string"></SimpleField>
 </Schema>
-<Folder><name>test_WriteGeoLayerToKML_Points_OutputDescriptionAttribute_out</name>
+<Folder><name>test_WriteGeoLayerToKML_Points_PlacemarkNameAttribute_out</name>
   <Placemark>
-	<description>1</description>
+	<name>1</name>
       <Point><coordinates>-106.277078683373,39.3223878229657</coordinates></Point>
   </Placemark>
   <Placemark>
-	<description>2</description>
+	<name>2</name>
       <Point><coordinates>-105.656271282221,39.2606598143284</coordinates></Point>
   </Placemark>
   <Placemark>
-	<description>3</description>
+	<name>3</name>
       <Point><coordinates>-105.672144198728,38.7932906060751</coordinates></Point>
   </Placemark>
   <Placemark>
-	<description>4</description>
+	<name>4</name>
       <Point><coordinates>-105.300012489515,39.1954044909119</coordinates></Point>
   </Placemark>
   <Placemark>
-	<description>5</description>
+	<name>5</name>
       <Point><coordinates>-105.197720360916,38.9220375955185</coordinates></Point>
   </Placemark>
   <Placemark>
-	<description>6</description>
+	<name>6</name>
       <Point><coordinates>-105.430523136348,39.1142762509887</coordinates></Point>
   </Placemark>
 </Folder>

@@ -16,3 +16,5 @@ IntersectGeoLayer(GeoLayerID="input_lines", IntersectGeoLayerID="intersect_lines
 WriteGeoLayerToGeoJSON(GeoLayerID="input_lines_intersectedBy_intersect_lines", OutputFile="results/test-IntersectGeoLayer-lines-linesAsIntersect-out")
 # Compare the results to the expected results
 CompareFiles(InputFile1="results/test-IntersectGeoLayer-lines-linesAsIntersect-out.geojson", InputFile2="expected-results/test-IntersectGeoLayer-lines-linesAsIntersect-out.geojson", IfDifferent="Warn")
+# Free all GeoLayers to avoid errors in suite tests.
+FreeGeoLayers(GeoLayerIDs="*")
