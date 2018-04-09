@@ -1,6 +1,9 @@
 StartLog(LogFile="results/test-ReadGeoLayerFromGeoJSON-Line.gp.log")
+#
 # Test reading a GeoLayer from a GeoJSON 
 # - GeoJSON is a line layer
+#
+#
 # Remove the result line geojson file from the last run of the test, if existing
 RemoveFile(SourceFile="results/test-ReadGeoLayerFromGeoJSON-Line-out.geojson", IfSourceFileNotFound="Ignore")
 # Read the line GeoJSON (with GeoLayerID of "line") into the GeoProcessor 
