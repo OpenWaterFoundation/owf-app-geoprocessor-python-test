@@ -2,7 +2,8 @@
 
 |Data|Description|Source|How To Recreate|
 |---|-----|-----|----|
-|`workbook-xlsx.xlsx`|An Excel worksheet (`.xlsx` file) with two worksheets. Each worksheet has a simple table with various cell formats (`text`, `integer`, etc.).|Manually created.|Open an Excel workbook. Add the below data tables. Save as an `.xlsx` file.|
+|`workbook-xlsx.xlsx`|An Excel workbook (`.xlsx` file) with two worksheets. Each worksheet has a simple table with various cell formats (`text`, `integer`, etc.).|Manually created.|Open an Excel workbook. Add the below data tables. Save as an `.xlsx` file.|
+|`existing-workbook.xlsx`|An Excel workbook (`.xlsx` file) with one worksheets. The worksheet must be named `ExitingSheet` but the contents are not important. This file is used to test how well the command functions when writing a Table to an existing Excel file. |Manually created.|-|
 
 
 ## Data Tables
