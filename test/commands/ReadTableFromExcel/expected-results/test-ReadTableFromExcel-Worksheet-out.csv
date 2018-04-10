@@ -1,0 +1,3 @@
+String,Date,Integer,Float,Boolean
+testC,1999-06-03,3,6.022,False
+testD,2003-08-27,14,0.5,True

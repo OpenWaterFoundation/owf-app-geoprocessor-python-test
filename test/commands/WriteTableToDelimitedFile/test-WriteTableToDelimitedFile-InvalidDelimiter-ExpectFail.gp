@@ -1,6 +1,6 @@
 StartLog(LogFile="results/test-WriteTableToDelimitedFile-InvalidDelimiter-ExpectFail.gp.log")
 #
-# Test that a FAIL occurs if attempting to wirte a delimiter of more than one character
+# Test that a FAIL occurs if attempting to write a delimiter of more than one character
 #@expectedStatus Failure
 #
 #

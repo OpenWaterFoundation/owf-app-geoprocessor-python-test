@@ -1,6 +1,6 @@
 StartLog(LogFile="results/test-WriteTableToDelimitedFile-txt.gp.log")
 #
-# Test reading a Table from a delimited file. 
+# Test writing a Table to a delimited file. 
 #	- write to a txt file
 # 	- use default delimiter of `COMMA`
 #

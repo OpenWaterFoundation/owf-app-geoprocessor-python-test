@@ -1,6 +1,6 @@
 StartLog(LogFile="results/test-WriteTableToDelimitedFile-Delimiter.gp.log")
 #
-# Test reading a Table from a delimited file. 
+# Test writing a Table to a delimited file. 
 #	- write to a txt file
 # 	- use no-default delimiter of `SEMICOLON`
 #
