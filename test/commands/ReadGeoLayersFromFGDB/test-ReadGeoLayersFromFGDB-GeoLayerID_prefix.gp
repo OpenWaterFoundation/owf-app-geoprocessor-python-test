@@ -6,7 +6,7 @@ StartLog(LogFile="results/test-ReadGeoLayersFromFGDB-GeoLayerID_prefix.gp.log")
 # Remove the result point geojson file from the last run of the test, if existing
 RemoveFile(SourceFile="results/test-ReadGeoLayersFromFGDB-GeoLayerID_prefix-point-out.geojson", IfSourceFileNotFound="Ignore")
 # Read all available GeoLayers from the file geodatabase
-ReadGeoLayersFromFGDB(SpatialDataFolder="data/ReadGeoLayersFromFGDB-test.gdb", GeoLayerID_prefix="testPrefix")
+ReadGeoLayersFromFGDB(SpatialDataFolder="data/ReadGeoLayersFromFGDB-test.gdb", ReadOnlyOneFeatureClass="False", GeoLayerID_prefix="testPrefix")
 # Uncomment the next line to reproduce the expected results
 #WriteGeoLayerToGeoJSON(GeoLayerID="testPrefix_point", OutputFile="expected-results/test-ReadGeoLayersFromFGDB-GeoLayerID_prefix-point-out")
 # Write the point to a GeoJSON file 

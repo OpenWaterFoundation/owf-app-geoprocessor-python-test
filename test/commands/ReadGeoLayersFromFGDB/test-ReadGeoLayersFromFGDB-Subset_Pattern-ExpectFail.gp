@@ -5,6 +5,6 @@ StartLog(LogFile="results/test-ReadGeoLayersFromFGDB-Subset_Pattern-ExpectFail.g
 #	- becuase there are no feature classes in the file geodatabase that start with 'C', the test SHOULD FAIL when trying to write the GeoLayer out to a GeoJSON file
 #@expectedStatus Failure
 # Read all available GeoLayers from the file geodatabase into the GeoProcessor (that start with 'C')
-ReadGeoLayersFromFGDB(SpatialDataFolder="data/ReadGeoLayersFromFGDB-test.gdb", Subset_Pattern="C*")
+ReadGeoLayersFromFGDB(SpatialDataFolder="data/ReadGeoLayersFromFGDB-test.gdb", ReadOnlyOneFeatureClass="False", Subset_Pattern="C*")
 # Write the line Geolayer to a GeoJSON file - this should fail
 WriteGeoLayerToGeoJSON(GeoLayerID="line", OutputFile="results/test-ReadGeoLayersFromFGDB-Subset_Pattern-ExpectFail-out")

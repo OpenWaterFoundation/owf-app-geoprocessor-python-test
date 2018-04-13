@@ -2,6 +2,7 @@
 
 |Data|Description|Source|How To Recreate|
 |---|-----|-----|----|
+|`invalid.gdb`|An invalid file geodatabase. An empty folder with the `.gdb` extension in the name. Used to test that a `FAILURE` message appears if a user attempts to read an invalid file geodatabase.|Manaully created.| Right-click in the `data` folder and create new folder. Rename the created folder to `invalid.gdb`.|
 |`ReadGeoLayersFromFGDb-test.gdb`|An Esri File Geodatabase with the following three feature classes.|Manually created in ArcCatalog. | See step-by-step instructions below.|
 |`line` feature class|A single-feature `LINE` feature class projected in WGS84.|Manually created in ArcCatalog/ArcMap. | See step-by-step instructions below.|
 |`point` feature class|A single-feature `POINT` feature class projected in WGS84.|Manually created in ArcCatalog/ArcMap | See step-by-step instructions below.|
