@@ -10,7 +10,7 @@ RemoveFile(SourceFile="results/test-WriteTableToDelimitedFile-csv-out.csv", IfSo
 # Read the text delimited file into the GeoProcessor 
 ReadTableFromDelimitedFile(InputFile="data/table-csv-comma.csv", TableID="testTable")
 # Uncomment the line below to reproduce the expected results
-#WriteTableToDelimitedFile(TableID="testTable", OutputFile="expected-results/test-WriteTableToDelimitedFile-csv-out.csv")
+# WriteTableToDelimitedFile(TableID="testTable", OutputFile="expected-results/test-WriteTableToDelimitedFile-csv-out.csv")
 # Write the table to a delimited file. 
 WriteTableToDelimitedFile(TableID="testTable", OutputFile="results/test-WriteTableToDelimitedFile-csv-out.csv")
 # Compare the results to the input file. 

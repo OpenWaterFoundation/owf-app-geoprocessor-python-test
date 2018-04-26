@@ -13,7 +13,7 @@ CopyFile(SourceFile="data/existing-workbook.xlsx", DestinationFile="results/test
 # Read the first worksheet of the INPUT workbook. TableID: input-workbook-worksheet-1-preprocess
 ReadTableFromExcel(InputFile="data/workbook-xlsx.xlsx", TableID="input-workbook-worksheet-1-preprocess")
 # Uncomment the next line to reproduce the expected results
-#WriteTableToDelimitedFile(TableID="input-workbook-worksheet-1-preprocess", OutputFile="expected-results/test-WriteTableToExcel-existingFileOverwriteWorksheet-Sheet1-out.csv", WriteIndexColumn="False")
+# WriteTableToDelimitedFile(TableID="input-workbook-worksheet-1-preprocess", OutputFile="expected-results/test-WriteTableToExcel-existingFileOverwriteWorksheet-Sheet1-out.csv", WriteIndexColumn="False")
 # Write the input-workbook-worksheet-1-preprocess table to the existing workbook. Overwrite the ExistingSheet worksheet. 
 WriteTableToExcel(TableID="input-workbook-worksheet-1-preprocess", OutputFile="results/test-WriteTableToExcel-existingFileOverwriteWorksheet-out.xlsx", OutputWorksheet="ExistingSheet", WriteIndexColumn="False")
 # Read the first sheet of the existing workbook TableID: existing-workbook-worksheet-1-postprocess
