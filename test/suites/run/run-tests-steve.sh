@@ -8,10 +8,16 @@
 
 # Use the gpdev script, which relies on QGIS, used in development environment running in CygWin, etc.
 # - This is the default
-gpDev=../../../../owf-app-geoprocessor-python/scripts/gpdev.sh
+# Python 2...
+#gpDev=../../../../owf-app-geoprocessor-python/scripts/gpdev.sh
+# Python 3...
+gpDev=../../../../owf-app-geoprocessor-python/scripts/gpdev3.sh
 # Use the gptest script, which does not have a dependence on QGIS
 # - This is used if command line -gptest is provided when running this script
-gpTest=../../../../owf-app-geoprocessor-python/scripts/gptest.sh
+# Python 2...
+#gpTest=../../../../owf-app-geoprocessor-python/scripts/gptest.sh
+# Python 3...
+gpTest=../../../../owf-app-geoprocessor-python/scripts/gptest3.sh
 
 # Default is use development version
 GP=${gpDev}

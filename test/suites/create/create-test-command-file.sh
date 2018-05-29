@@ -5,9 +5,15 @@
 # - If using the UI, just load and run the command file, rather than this script.
 
 # Version of GeoProcessor that does not depend on QGIS (for testing non-geospatial programs)
-gpTest=../../../../owf-app-geoprocessor-python/scripts/gptest.sh
+# Python 2...
+#gpTest=../../../../owf-app-geoprocessor-python/scripts/gptest.sh
+# Python 3...
+gpTest=../../../../owf-app-geoprocessor-python/scripts/gptest3.sh
 # Version of GeoProcessor that does depend on QGIS (for full testing)
-gp=../../../../owf-app-geoprocessor-python/scripts/gp.sh
+# Python 2...
+#gp=../../../../owf-app-geoprocessor-python/scripts/gp.sh
+# Python 3...
+gp=../../../../owf-app-geoprocessor-python/scripts/gp3.sh
 GP=${gpTest}
 
 # Redirect standard output and error to a log file

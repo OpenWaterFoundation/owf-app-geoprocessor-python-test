@@ -6,7 +6,10 @@ rem - This batch file can be run from the command line.
 rem - If using the UI, just load and run the command file (create-regression-test-command-file.gp),
 rem   rather than running this batch file.
 
-set GP=..\..\..\..\owf-app-geoprocessor-python\scripts\gp.bat
+rem Python 2...
+rem set GP=..\..\..\..\owf-app-geoprocessor-python\scripts\gp.bat
+rem Python 3...
+set GP=..\..\..\..\owf-app-geoprocessor-python\scripts\gp3.bat
 
 rem Redirect standard output and error to a log file
 rem - This is done because the Python environment and code prints some messages

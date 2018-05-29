@@ -3,6 +3,8 @@
 This folder contains files used to create the test suite command file,
 which is then run to test the full software functionality.
 
+**All the scripts default to Python3 and call gp scripts ending in "3", indicating Python3/QGIS3.**
+
 * Command file:
 	+ `create-regression-test-command-file.gp` - command file that is run to create the test suite
 		- `create-regression-test-command-file.gp.log` - log file for the above, ignored in repository

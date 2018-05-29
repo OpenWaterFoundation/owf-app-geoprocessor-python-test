@@ -2,7 +2,10 @@
 rem Run the auto-generated GeoProcessor tests
 rem - Use the development version of the GeoProcessor (gpdev.bat) so as to use development code.
 
-set GP=..\..\..\..\owf-app-geoprocessor-python\scripts\gpdev.bat
+rem Python 2...
+rem set GP=..\..\..\..\owf-app-geoprocessor-python\scripts\gpdev.bat
+rem Python 3...
+set GP=..\..\..\..\owf-app-geoprocessor-python\scripts\gpdev3.bat
 
 call %GP% --commands geoprocessor-tests.gp > run-geoprocessor-tests.bat.log 2>&1
 if %errorlevel% neq 0 goto error
