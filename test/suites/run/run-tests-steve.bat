@@ -7,7 +7,10 @@ rem   Otherwise the window will go away when exit is called in the "gp" batch fi
 rem - Redirect to a file if necessary using:  run-tests-steve.bat  > file 2>&1
 rem - Run the developer version of the geoprocessor, to use development Python files.
 
-set GP=..\..\..\..\owf-app-geoprocessor-python\scripts\gpdev.bat
+rem Python 2...
+rem set GP=..\..\..\..\owf-app-geoprocessor-python\scripts\gpdev.bat
+rem Python 3...
+set GP=..\..\..\..\owf-app-geoprocessor-python\scripts\gpdev3.bat
 
 rem call %GP% --commands ../../commands/Blank/test-Blank.gp
 rem call %GP% --commands ../../commands/Comment/test-Comment.gp

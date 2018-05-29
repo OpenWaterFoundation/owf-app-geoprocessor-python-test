@@ -5,7 +5,10 @@
 # - This version uses the development version `gpdev.sh`
 # - If using the UI, just load and run the command file, rather than this script.
 
-gpDev=../../../../owf-app-geoprocessor-python/scripts/gpdev.sh
+# Python 2...
+#gpDev=../../../../owf-app-geoprocessor-python/scripts/gpdev.sh
+# Python 3...
+gpDev=../../../../owf-app-geoprocessor-python/scripts/gpdev3.sh
 GP=${gpDev}
 
 # Redirect standard output and error to a log file

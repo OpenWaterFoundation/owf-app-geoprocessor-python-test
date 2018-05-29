@@ -3,6 +3,8 @@
 This folder contains files used to run test suites.
 The test suites are created by running scripts in the `test/suites/create` folder.
 
+**All the scripts default to Python3 and call gp scripts ending in "3", indicating Python3/QGIS3.**
+
 ## Run Full Test Suite ##
 
 * Command file (created by running scripts in the `../create` folder):
