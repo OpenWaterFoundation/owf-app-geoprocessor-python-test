@@ -1,2 +1,2 @@
 output-list-include=['line.geojson', 'line_geojson.zip']
-output-list-no-include=['line.geojson', 'test-file.txt', 'README.md', 'line_geojson.zip']
+output-list-no-include=['line.geojson', 'line_geojson.zip', 'README.md', 'test-file.txt']

@@ -10,6 +10,6 @@ RemoveFile(SourceFile="results/test-ReadTableFromDelimitedFile-text-out.txt", If
 # Read the text delimited file into the GeoProcessor 
 ReadTableFromDelimitedFile(InputFile="data/table-textfile-comma.txt", TableID="testTable")
 # Write the table to a delimited file.
-WriteTableToDelimitedFile(TableID="testTable", OutputFile="results/test-ReadTableFromDelimitedFile-text-out.txt")
+WriteTableToDelimitedFile(TableID="testTable", OutputFile="results/test-ReadTableFromDelimitedFile-text-out.txt", WriteIndexColumn="False")
 # Compare the results to the input file
 CompareFiles(InputFile1="results/test-ReadTableFromDelimitedFile-text-out.txt", InputFile2="data/table-textfile-comma.txt", IfDifferent="Warn")

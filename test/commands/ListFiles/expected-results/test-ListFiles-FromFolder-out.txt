@@ -1,1 +1,1 @@
-output-list=['line.geojson', 'test-file.txt', 'test-folder', 'README.md', 'line_geojson.zip']
+output-list=['line.geojson', 'line_geojson.zip', 'README.md', 'test-file.txt', 'test-folder']

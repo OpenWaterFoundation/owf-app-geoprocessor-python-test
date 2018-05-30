@@ -6,7 +6,7 @@ RemoveFile(SourceFile="results/test-ReadGeoLayerFromShapefile-Polygon-out.geojso
 # Read the polygon Shapefile (with GeoLayerID of "polygon") into the GeoProcessor 
 ReadGeoLayerFromShapefile(SpatialDataFile="data/polygon.shp", GeoLayerID="polygon")
 # Uncomment the line below to recreate the expected results
-#WriteGeoLayerToGeoJSON(GeoLayerID="polygon", OutputFile="expected-results/test-ReadGeoLayerFromShapefile-Polygon-out")
+WriteGeoLayerToGeoJSON(GeoLayerID="polygon", OutputFile="expected-results/test-ReadGeoLayerFromShapefile-Polygon-out")
 # Write the polygon Geolayer to a GeoJSON file
 WriteGeoLayerToGeoJSON(GeoLayerID="polygon", OutputFile="results/test-ReadGeoLayerFromShapefile-Polygon-out")
 # Compare the results to the expected results

@@ -2,6 +2,9 @@ StartLog(LogFile="results/test-CopyGeoLayer-Points-IncludeFeaturesIf.gp.log")
 # Test copying a GeoLayer 
 # - data is a GeoJSON points layer
 # - test the IncludeFeaturesIf parameter
+#@enabled false
+#
+#
 # Remove the resut POINTS geojson file from the last run of the test, if existing
 RemoveFile(SourceFile="results/test-CopyGeoLayer-Points-IncludeFeaturesIf-out.geojson", IfSourceFileNotFound="Ignore")
 # Read the POINTS GeoJSON (with GeoLayerID of "points") into the GeoProcessor 
