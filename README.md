@@ -86,11 +86,13 @@ Although unit tests in the code could be implemented,
 functional tests validate the full software functionality and ensure that tests are
 created that can be run in the operational environment, if needed.
 
-The `gp3` application (previously `gp` for Python 2) can be used to run a test command file as follows:
+The `gp` application can be used to run a test command file as follows and now uses Python3/QGIS3:
 
-1. Use `gp3 --commands command-file.gp` to run in batch mode.
-2. Use `gp3` and then `run command-file.gp` to run via the command shell.
-2. Use `gp3 -ui` and then select a command file in the user interface (UI) - under development.
+1. Use `gp --commands command-file.gp` to run in batch mode.
+2. Use `gp` and then `run command-file.gp` to run via the command shell.
+2. Use `gp -ui` and then select a command file in the user interface (UI) - under development.
+
+The `gp2` application is an archive of previous Python2/QGIS2 version.
 
 ### Run a Test Suite in the Development Environment ###
 

@@ -3,15 +3,9 @@
 # Run the auto-generated GeoProcessor tests
 
 # Run using developer version of environment, with full QGIS enabled
-# Python 2...
 #gpDev=../../../../owf-app-geoprocessor-python/scripts/gpdev.sh
-# Python 3...
-#gpDev=../../../../owf-app-geoprocessor-python/scripts/gpdev3.sh
 # Run using test version of environment, with QGIS dependency disabled
-# Python 2...
-#gpTest="../../../../owf-app-geoprocessor-python/scripts/gptest.sh"
-# Python 3...
-gpTest="../../../../owf-app-geoprocessor-python/scripts/gptest3.sh"
+gpTest="../../../../owf-app-geoprocessor-python/scripts/gptest.sh"
 GP=${gpTest}
 
 ${GP} --commands geoprocessor-tests.gp > run-geoprocessor-tests.sh.log 2>&1
