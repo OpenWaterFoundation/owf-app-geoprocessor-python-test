@@ -5,8 +5,8 @@ StartLog(LogFile="results/test-IntersectGeoLayer-polygons-linesAsIntersect.gp.lo
 #
 #
 # Read the polygon geojson (input GeoLayer)
-ReadGeoLayerFromGeoJSON(SpatialDataFile="data/input_polygons.geojson", GeoLayerID = "input_polygons")
+ReadGeoLayerFromGeoJSON(InputFile="data/input_polygons.geojson",GeoLayerID="input_polygons")
 # Read the lines geojson (intersect GeoLayer)
-ReadGeoLayerFromGeoJSON(SpatialDataFile="data/intersect_lines.geojson", GeoLayerID = "intersect_lines")
+ReadGeoLayerFromGeoJSON(InputFile="data/intersect_lines.geojson",GeoLayerID="intersect_lines")
 # Intersect the lines GeoLayer by the intersect polygons GeoLayer - should fail
-IntersectGeoLayer(GeoLayerID="input_polygons", IntersectGeoLayerID="intersect_lines")
+IntersectGeoLayer(GeoLayerID="input_polygons",IntersectGeoLayerID="intersect_lines")

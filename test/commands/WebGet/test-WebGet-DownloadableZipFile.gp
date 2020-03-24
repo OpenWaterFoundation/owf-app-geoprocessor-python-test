@@ -6,8 +6,8 @@ StartLog(LogFile="results/test-WebGet-DownloadableZipFile.gp.log")
 #
 #
 # Remove the downloadable file from the last run of the test, if existing
-RemoveFile(SourceFile="results/test-WebGet-DownloadableZipFile.zip", IfSourceFileNotFound="Ignore")
+RemoveFile(SourceFile="results/test-WebGet-DownloadableZipFile.zip",IfSourceFileNotFound="Ignore")
 # Get the downloadable file from the web
-WebGet(URL = "https://github.com/OpenWaterFoundation/owf-app-geoprocessor-python-test/blob/master/test/commands/WebGet/data/line_shp.zip?raw=true", OutputFile = "results/test-WebGet-DownloadableZipFile")
+WebGet(URL="https://github.com/OpenWaterFoundation/owf-app-geoprocessor-python-test/blob/master/test/commands/WebGet/data/line_shp.zip?raw=true",OutputFile="results/test-WebGet-DownloadableZipFile")
 # Compare the results to the original data
-CompareFiles(InputFile1="results/test-WebGet-DownloadableZipFile.zip", InputFile2="data/line_shp.zip", IfDifferent="Warn")
+CompareFiles(InputFile1="results/test-WebGet-DownloadableZipFile.zip",InputFile2="data/line_shp.zip",IfDifferent="Warn")

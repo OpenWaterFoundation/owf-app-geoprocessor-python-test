@@ -7,6 +7,10 @@
 # Ignore Microsoft Office temporary files
 ~$*
 
+# Ignore statistic summary file for images
+# - aux.xml are created when QGIS or ArcGIS use GDAL to open an image file
+*.aux.xml
+
 # Ignore log files globally
 *.log
 

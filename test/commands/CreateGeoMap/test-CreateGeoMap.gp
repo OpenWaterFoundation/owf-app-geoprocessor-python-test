@@ -1,0 +1,31 @@
+# Test creating a GeoMap
+#@docExample
+CreateGeoMap(NewGeoMapID="TestGeoMap",Name="TestGeoMap",Description="Test map",CRS="EPSG:4326",Properties="TestProperty:'property value',testint:5,initialExtent:TBD,minimumExtent:TBD,maximumExtent:TBD",IfGeoMapIDExists="Warn")
+#
+# Add a layer view group for polygons.
+AddGeoLayerViewGroupToGeoMap(GeoMapID="TestGeoMap",GeoLayerViewGroupID="TestGeoLayerViewGroupPolygons",Name="Test GeoLayerViewGroupPolygons",Description="Test layer view group for polygons")
+CreateGeoLayerFromGeometry(NewGeoLayerID="TestPolygonLayer",Name="Test PolygonLayer",Description="Test polygon layer",GeometryFormat="WKT",GeometryData="MULTIPOLYGON (((30 20, 45 40, 10 40, 30 20)),((15 5, 40 10, 10 20, 5 10, 15 5)))",CRS="EPSG:4326",Properties="testProperty1:'value1',testProperty2:'another property'")
+AddGeoLayerViewToGeoMap(GeoLayerID="TestPolygonLayer",GeoMapID="TestGeoMap",GeoLayerViewGroupID="TestGeoLayerViewGroupPolygons",GeoLayerViewID="TestPolygonLayer1",Name="Test polygon layer")
+SetGeoLayerViewSingleSymbol(GeoMapID="TestGeoMap",GeoLayerViewGroupID="TestGeoLayerViewGroupPolygons",GeoLayerViewID="TestPolygonLayer1",Properties="color:'255,165,0',outlineColor:black,size:9,sizeUnits:pixels,opacity:1.0,lineWide:1,fillOpacity:.8")
+#
+# Add a layer view group for lines.
+AddGeoLayerViewGroupToGeoMap(GeoMapID="TestGeoMap",GeoLayerViewGroupID="TestGeoLayerViewGroupLines",Name="Test GeoLayerViewGroupLines",Description="Test layer view group for lines")
+CreateGeoLayerFromGeometry(NewGeoLayerID="TestLineLayer",Name="TestLineLayer",Description="Test line layer",GeometryFormat="WKT",GeometryData="LINESTRING (30 10, 10 30, 40 40)",CRS="EPSG:4326")
+AddGeoLayerViewToGeoMap(GeoLayerID="TestLineLayer",GeoMapID="TestGeoMap",GeoLayerViewGroupID="TestGeoLayerViewGroupLines",GeoLayerViewID="TestLineLayer1",Name="Test line layer")
+SetGeoLayerViewGraduatedSymbol(GeoMapID="TestGeoMap",GeoLayerViewGroupID="TestGeoLayerViewGroupLines",GeoLayerViewID="TestLineLayer1",ClassificationAttribute="someattribute")
+#
+# Add a layer view group for points.
+AddGeoLayerViewGroupToGeoMap(GeoMapID="TestGeoMap",GeoLayerViewGroupID="TestGeoLayerViewGroupPoints",Name="Test GeoLayerViewGroupPoints",Description="Test layer view group for points")
+CreateGeoLayerFromGeometry(NewGeoLayerID="TestPointLayer",Name="TestPointLayer",Description="Test point layer",GeometryFormat="WKT",GeometryData="POINT (30 10)",CRS="EPSG:4326")
+AddGeoLayerViewToGeoMap(GeoLayerID="TestPointLayer",GeoMapID="TestGeoMap",GeoLayerViewGroupID="TestGeoLayerViewGroupPoints",GeoLayerViewID="TestPointLayer1",Name="Test point layer 1")
+SetGeoLayerViewCategorizedSymbol(GeoMapID="TestGeoMap",GeoLayerViewGroupID="TestGeoLayerViewGroupLines",GeoLayerViewID="TestLineLayer1",ClassificationAttribute="someattribute")
+#
+# Create a GeoMapProject and write to a JSON file.
+# - Must write the GeoLayers first - otherwise the map project won't know where to find the layers.
+WriteGeoLayerToGeoJSON(GeoLayerID="TestPolygonLayer",OutputFile="results/TestPolygonLayer.geojson")
+WriteGeoLayerToGeoJSON(GeoLayerID="TestLineLayer",OutputFile="results/TestLineLayer.geojson")
+WriteGeoLayerToGeoJSON(GeoLayerID="TestPointLayer",OutputFile="results/TestPointLayer.geojson")
+#
+CreateGeoMapProject(NewGeoMapProjectID="TestGeoMapProject",Name="TestGeoMapProject",Description="Test geomap project.",Properties="effectiveDateTime:'2020-01-01T00:00',author:me,saveDateTime:TBD,fileFormatVersion:TBD")
+AddGeoMapToGeoMapProject(GeoMapProjectID="TestGeoMapProject",GeoMapID="TestGeoMap")
+WriteGeoMapProjectToJSON(GeoMapProjectID="TestGeoMapProject",Indent="2",OutputFile="results/test-CreateGeoMap-out.json")

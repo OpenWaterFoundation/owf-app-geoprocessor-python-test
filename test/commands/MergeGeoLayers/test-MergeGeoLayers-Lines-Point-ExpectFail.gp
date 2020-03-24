@@ -1,12 +1,12 @@
 StartLog(LogFile="results/test-MergeGeoLayers-Lines-Point-ExpectFail.gp.log")
 # Test merging GeoLayers of different Geometry
-# 	- the first input GeoLayer is a multi-feature LINE GeoJSON file.
-#	- the second input GeoLayer is a single-feature POINT GeoJSON file.
-# 	- the test should FAIL becasue GeoLayers of difference geometries cannot merged
-#	- a local FAIL is a global PASS
+# - the first input GeoLayer is a multi-feature LINE GeoJSON file.
+# - the second input GeoLayer is a single-feature POINT GeoJSON file.
+# - the test should FAIL becasue GeoLayers of difference geometries cannot merged
+# - a local FAIL is a global PASS
 #@expectedStatus Failure
 # Read both GeoJSONs into the GeoProcessor 
-ReadGeoLayerFromGeoJSON(SpatialDataFile="data/point.geojson", GeoLayerID="point")
-ReadGeoLayerFromGeoJSON(SpatialDataFile="data/lines_StatName_StateName.geojson", GeoLayerID="lines")
+ReadGeoLayerFromGeoJSON(InputFile="data/point.geojson",GeoLayerID="point")
+ReadGeoLayerFromGeoJSON(InputFile="data/lines_StatName_StateName.geojson",GeoLayerID="lines")
 # Merge the two GeoLayers. 
-MergeGeoLayers(GeoLayerIDs="point, lines", OutputGeoLayerID="merged")
+MergeGeoLayers(GeoLayerIDs="point,lines",OutputGeoLayerID="merged")

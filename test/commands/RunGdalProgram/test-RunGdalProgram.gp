@@ -1,0 +1,1 @@
+RunGdalProgram(GdalProgram="gdalinfo",CommandLine="${GdalBinDir}/gdalinfo --help-general")

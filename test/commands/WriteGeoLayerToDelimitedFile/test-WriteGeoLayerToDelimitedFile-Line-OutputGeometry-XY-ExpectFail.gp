@@ -5,6 +5,6 @@ StartLog(LogFile="results/test-WriteGeoLayerToDelimitedFile-Line-OutputGeometry-
 # - Expecting FAILURE
 #@expectedStatus Failure
 # Read the line GeoJSON (with GeoLayerID of "line") into the GeoProcessor 
-ReadGeoLayerFromGeoJSON(SpatialDataFile="data\line.geojson", GeoLayerID="line")
+ReadGeoLayerFromGeoJSON(InputFile="data\line.geojson",GeoLayerID="line")
 # Write the line Geolayer to a GeoJSON file 
-WriteGeoLayerToDelimitedFile(GeoLayerID="line", OutputFile="results\test-WriteGeoLayerToDelimitedFile-Line-OutputGeometry-XY-ExpectFail-out")
+WriteGeoLayerToDelimitedFile(GeoLayerID="line",OutputFile="results\test-WriteGeoLayerToDelimitedFile-Line-OutputGeometry-XY-ExpectFail-out")
