@@ -3,7 +3,7 @@ StartLog(LogFile="results/test-WriteGeoLayerPropertiesToFile.gp.log")
 # - set properties of different types
 # Read a layer
 RemoveFile(SourceFile="results/test-WritePropertiesToFile-IncludeProperties-NameValue-Ascending-out.txt",IfSourceFileNotFound="Ignore")
-ReadGeoLayerFromGeoJSON(SpatialDataFile="data/point.geojson", GeoLayerID="point")
+ReadGeoLayerFromGeoJSON(InputFile="data/point.geojson",GeoLayerID="point")
 SetGeoLayerProperty(GeoLayerID="point",PropertyName="TestWriteGeoLayerPropertiesToFile_str",PropertyType="str",PropertyValue="Test string value")
 SetGeoLayerProperty(GeoLayerID="point",PropertyName="TestWriteGeoLayerPropertiesToFile_float",PropertyType="float",PropertyValue="1.2345")
 SetGeoLayerProperty(GeoLayerID="point",PropertyName="TestWriteGeoLayerPropertiesToFile_int",PropertyType="int",PropertyValue="12345")

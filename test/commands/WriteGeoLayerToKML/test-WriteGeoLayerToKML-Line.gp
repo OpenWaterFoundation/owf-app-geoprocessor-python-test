@@ -4,12 +4,12 @@ StartLog(LogFile="results/test-WriteGeoLayerToKML-Line.gp.log")
 # - all default optional parameters
 #
 # Remove the result line kml file from the last run of the test, if existing
-RemoveFile(SourceFile="results/test-WriteGeoLayerToKML-Line-out.kml", IfSourceFileNotFound="Ignore")
+RemoveFile(SourceFile="results/test-WriteGeoLayerToKML-Line-out.kml",IfSourceFileNotFound="Ignore")
 # Read the line GeoJSON (with GeoLayerID of "line") into the GeoProcessor 
-ReadGeoLayerFromGeoJSON(SpatialDataFile="data/line.geojson", GeoLayerID="line")
+ReadGeoLayerFromGeoJSON(InputFile="data/line.geojson",GeoLayerID="line")
 # Uncomment below line to recreate expected results
-#WriteGeoLayerToKML(GeoLayerID="line", OutputFile="expected-results/test-WriteGeoLayerToKML-Line-out")
+#WriteGeoLayerToKML(GeoLayerID="line",OutputFile="expected-results/test-WriteGeoLayerToKML-Line-out")
 # Write the line Geolayer to a KML file 
-WriteGeoLayerToKML(GeoLayerID="line", OutputFile="results/test-WriteGeoLayerToKML-Line-out")
+WriteGeoLayerToKML(GeoLayerID="line",OutputFile="results/test-WriteGeoLayerToKML-Line-out")
 # Compare the results to the expected results
-CompareFiles(InputFile1="expected-results/test-WriteGeoLayerToKML-Line-out.kml", InputFile2="results/test-WriteGeoLayerToKML-Line-out.kml", IfDifferent="Warn")
+CompareFiles(InputFile1="expected-results/test-WriteGeoLayerToKML-Line-out.kml",InputFile2="results/test-WriteGeoLayerToKML-Line-out.kml",IfDifferent="Warn")

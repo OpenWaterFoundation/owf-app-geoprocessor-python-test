@@ -5,7 +5,7 @@ StartLog(LogFile="results/test-SetPropertyFromGeoLayer.gp.log")
 # - The write the output file for comparison
 # First read a layer and set properties on the GeoLayer
 RemoveFile(SourceFile="results/test-SetPropertyFromGeoLayer-out.txt",IfSourceFileNotFound="Ignore")
-ReadGeoLayerFromGeoJSON(SpatialDataFile="data/point.geojson",GeoLayerID="point")
+ReadGeoLayerFromGeoJSON(InputFile="data/point.geojson",GeoLayerID="point")
 SetGeoLayerProperty(GeoLayerID="point",PropertyName="TestSetPropertyFromGeoLayer_str",PropertyType="str",PropertyValue="Test string value")
 SetGeoLayerProperty(GeoLayerID="point",PropertyName="TestSetPropertyFromGeoLayer_float",PropertyType="float",PropertyValue="1.2345")
 SetGeoLayerProperty(GeoLayerID="point",PropertyName="TestSetPropertyFromGeoLayer_int",PropertyType="int",PropertyValue="12345")

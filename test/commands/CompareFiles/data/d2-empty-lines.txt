@@ -1,0 +1,8 @@
+# File with empty lines
+# - same as d1-empty-lines except 3rd and 6th data lines
+line1
+line2
+line3
+
+line5
+

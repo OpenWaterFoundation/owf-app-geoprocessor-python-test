@@ -1,0 +1,6 @@
+# File with empty lines
+line1
+
+line3
+
+line5

@@ -4,4 +4,4 @@ StartLog(LogFile="results/test-RemoveGeoLayerAttributes-InvalidGeoLayer-ExpectFa
 # - expect FAIL because the GeoLayer does not exist
 #@expectedStatus Failure
 # Remove the `notValid` attribute value from a GeoLayer that does not exist
-RemoveGeoLayerAttributes(GeoLayerID="line", AttributeNames="notValid")
+RemoveGeoLayerAttributes(GeoLayerID="line",AttributeNames="notValid")
