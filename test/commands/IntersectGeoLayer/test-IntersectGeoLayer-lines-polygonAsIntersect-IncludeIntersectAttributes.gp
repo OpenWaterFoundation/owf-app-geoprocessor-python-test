@@ -12,9 +12,9 @@ ReadGeoLayerFromGeoJSON(InputFile="data/polygon-co-counties.geojson",GeoLayerID=
 # Intersect the lines GeoLayer by the intersect polygons GeoLayer
 IntersectGeoLayer(GeoLayerID="input_lines",IntersectGeoLayerID="intersect_polygons",IncludeIntersectAttributes="low*,cname*")
 # Uncomment the next line to reproduce the expected results
-#WriteGeoLayerToGeoJSON(GeoLayerID="input_lines_intersectedBy_intersect_polygons",OutputFile="expected-results/test-IntersectGeoLayer-lines-polygonAsIntersect-IncludeIntersectAttributes-out")
+# WriteGeoLayerToGeoJSON(GeoLayerID="input_lines_intersectedBy_intersect_polygons",OutputFile="expected-results/test-IntersectGeoLayer-lines-polygonAsIntersect-IncludeIntersectAttributes-out.geojson")
 # Write the output intersected line GeoLayer to GeoJSON format.
-WriteGeoLayerToGeoJSON(GeoLayerID="input_lines_intersectedBy_intersect_polygons",OutputFile="results/test-IntersectGeoLayer-lines-polygonAsIntersect-IncludeIntersectAttributes-out")
+WriteGeoLayerToGeoJSON(GeoLayerID="input_lines_intersectedBy_intersect_polygons",OutputFile="results/test-IntersectGeoLayer-lines-polygonAsIntersect-IncludeIntersectAttributes-out.geojson")
 # Compare the results to the expected results
 CompareFiles(InputFile1="results/test-IntersectGeoLayer-lines-polygonAsIntersect-IncludeIntersectAttributes-out.geojson",InputFile2="expected-results/test-IntersectGeoLayer-lines-polygonAsIntersect-IncludeIntersectAttributes-out.geojson",IfDifferent="Warn")
 # Free all GeoLayers to avoid errors in suite tests.

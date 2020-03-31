@@ -9,8 +9,8 @@ ReadGeoLayerFromGeoJSON(InputFile="data/clipping_polygon.geojson")
 # Clip the points GeoLayerID by the clippling polygon
 ClipGeoLayer(InputGeoLayerID="input_points",ClippingGeoLayerID="clipping_polygon")
 # Uncomment the next line to reproduce the expected results
-#WriteGeoLayerToGeoJSON(GeoLayerID="input_points_clippedBy_clipping_polygon",OutputFile="expected-results/test-ClipGeoLayer-pointsAsInput-out")
+# WriteGeoLayerToGeoJSON(GeoLayerID="input_points_clippedBy_clipping_polygon",OutputFile="expected-results/test-ClipGeoLayer-pointsAsInput-out.geojson")
 # Write the point, line and polygon Geolayers to a GeoJSON file
-WriteGeoLayerToGeoJSON(GeoLayerID="input_points_clippedBy_clipping_polygon",OutputFile="results/test-ClipGeoLayer-pointsAsInput-out")
+WriteGeoLayerToGeoJSON(GeoLayerID="input_points_clippedBy_clipping_polygon",OutputFile="results/test-ClipGeoLayer-pointsAsInput-out.geojson")
 # Compare the results to the expected results
 CompareFiles(InputFile1="results/test-ClipGeoLayer-pointsAsInput-out.geojson",InputFile2="expected-results/test-ClipGeoLayer-pointsAsInput-out.geojson",IfDifferent="Warn")

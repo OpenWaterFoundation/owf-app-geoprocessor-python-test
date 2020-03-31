@@ -11,8 +11,8 @@ CopyGeoLayer(GeoLayerID="point")
 # Add the `addTest` attribute value to GeoLayer "point".
 AddGeoLayerAttribute(GeoLayerID="point_copy",AttributeName="addTest",AttributeType="string",InitialValue="test")
 # Uncomment the next line to reproduce the expected results
-#WriteGeoLayerToGeoJSON(GeoLayerID="point_copy",OutputFile="expected-results/test-AddGeoLayerAttribute-Point-On-Disk-out")
-# Write the in-memory point Geolayer to a GeoJSON file 
-WriteGeoLayerToGeoJSON(GeoLayerID="point_copy",OutputFile="results/test-AddGeoLayerAttribute-Point-On-Disk-out")
+# WriteGeoLayerToGeoJSON(GeoLayerID="point_copy",OutputFile="expected-results/test-AddGeoLayerAttribute-Point-On-Disk-out.geojson")
+# Write the in-memory point Geolayer to a GeoJSON file
+WriteGeoLayerToGeoJSON(GeoLayerID="point_copy",OutputFile="results/test-AddGeoLayerAttribute-Point-On-Disk-out.geojson")
 # Compare the results to the expected results
 CompareFiles(InputFile1="expected-results/test-AddGeoLayerAttribute-Point-On-Disk-out.geojson",InputFile2="results/test-AddGeoLayerAttribute-Point-On-Disk-out.geojson",IfDifferent="Warn")

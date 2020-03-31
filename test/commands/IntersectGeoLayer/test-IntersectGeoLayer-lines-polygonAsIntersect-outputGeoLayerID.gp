@@ -12,9 +12,9 @@ ReadGeoLayerFromGeoJSON(InputFile="data/polygon-co-counties.geojson",GeoLayerID=
 # Intersect the lines GeoLayer by the intersect polygons GeoLayer
 IntersectGeoLayer(GeoLayerID="input_lines",IntersectGeoLayerID="intersect_polygons",OutputGeoLayerID="output")
 # Uncomment the next line to reproduce the expected results
-#WriteGeoLayerToGeoJSON(GeoLayerID="output",OutputFile="expected-results/test-IntersectGeoLayer-lines-polygonAsIntersect-outputGeoLayerID-out")
+# WriteGeoLayerToGeoJSON(GeoLayerID="output",OutputFile="expected-results/test-IntersectGeoLayer-lines-polygonAsIntersect-outputGeoLayerID-out.geojson")
 # Write the output intersected line GeoLayer to GeoJSON format.
-WriteGeoLayerToGeoJSON(GeoLayerID="output",OutputFile="results/test-IntersectGeoLayer-lines-polygonAsIntersect-outputGeoLayerID-out")
+WriteGeoLayerToGeoJSON(GeoLayerID="output",OutputFile="results/test-IntersectGeoLayer-lines-polygonAsIntersect-outputGeoLayerID-out.geojson")
 # Compare the results to the expected results
 CompareFiles(InputFile1="results/test-IntersectGeoLayer-lines-polygonAsIntersect-outputGeoLayerID-out.geojson",InputFile2="expected-results/test-IntersectGeoLayer-lines-polygonAsIntersect-outputGeoLayerID-out.geojson",IfDifferent="Warn")
 # Free all GeoLayers to avoid errors in suite tests.

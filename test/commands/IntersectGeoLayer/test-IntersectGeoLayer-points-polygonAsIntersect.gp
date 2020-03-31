@@ -11,9 +11,9 @@ ReadGeoLayerFromGeoJSON(InputFile="data/polygon-co-counties.geojson",GeoLayerID=
 # Intersect the points GeoLayer by the intersect polygons GeoLayer
 IntersectGeoLayer(GeoLayerID="input_points",IntersectGeoLayerID="intersect_polygons")
 # Uncomment the next line to reproduce the expected results
-#WriteGeoLayerToGeoJSON(GeoLayerID="input_points_intersectedBy_intersect_polygons",OutputFile="expected-results/test-IntersectGeoLayer-points-polygonAsIntersect-out")
+# WriteGeoLayerToGeoJSON(GeoLayerID="input_points_intersectedBy_intersect_polygons",OutputFile="expected-results/test-IntersectGeoLayer-points-polygonAsIntersect-out.geojson")
 # Write the output intersected points GeoLayer to GeoJSON format.
-WriteGeoLayerToGeoJSON(GeoLayerID="input_points_intersectedBy_intersect_polygons",OutputFile="results/test-IntersectGeoLayer-points-polygonAsIntersect-out")
+WriteGeoLayerToGeoJSON(GeoLayerID="input_points_intersectedBy_intersect_polygons",OutputFile="results/test-IntersectGeoLayer-points-polygonAsIntersect-out.geojson")
 # Compare the results to the expected results
 CompareFiles(InputFile1="results/test-IntersectGeoLayer-points-polygonAsIntersect-out.geojson",InputFile2="expected-results/test-IntersectGeoLayer-points-polygonAsIntersect-out.geojson",IfDifferent="Warn")
 # Free all GeoLayers to avoid errors in suite tests.

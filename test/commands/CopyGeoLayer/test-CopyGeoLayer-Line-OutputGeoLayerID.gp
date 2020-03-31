@@ -9,8 +9,8 @@ ReadGeoLayerFromGeoJSON(InputFile="data/line.geojson",GeoLayerID="line")
 # Copy the GeoLayer
 CopyGeoLayer(GeoLayerID="line",OutputGeoLayerID="TestID")
 # Uncomment the line below to recreate the expected results
-#WriteGeoLayerToGeoJSON(GeoLayerID="TestID",OutputFile="expected-results/test-CopyGeoLayer-Line-OutputGeoLayerID-out")
+# WriteGeoLayerToGeoJSON(GeoLayerID="TestID",OutputFile="expected-results/test-CopyGeoLayer-Line-OutputGeoLayerID-out.geojson")
 # Write the copied Geolayer to a GeoJSON file
-WriteGeoLayerToGeoJSON(GeoLayerID="TestID",OutputFile="results/test-CopyGeoLayer-Line-OutputGeoLayerID-out")
+WriteGeoLayerToGeoJSON(GeoLayerID="TestID",OutputFile="results/test-CopyGeoLayer-Line-OutputGeoLayerID-out.geojson")
 # Compare the results to the expected results
 CompareFiles(InputFile1="expected-results/test-CopyGeoLayer-Line-OutputGeoLayerID-out.geojson",InputFile2="results/test-CopyGeoLayer-Line-OutputGeoLayerID-out.geojson",IfDifferent="Warn")
