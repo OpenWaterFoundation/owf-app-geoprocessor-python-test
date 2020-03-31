@@ -8,7 +8,7 @@ RemoveFile(SourceFile="results/test-CreateGeoLayerFromGeometry-WKT-Polygons-out.
 # Create a GeoLayer from WKT in WGS84 (EPSG:4326).
 CreateGeoLayerFromGeometry(NewGeoLayerID="polygons",Name="polygons",GeometryFormat="WKT",GeometryData="MULTIPOLYGON (((30 20, 45 40, 10 40, 30 20)),((15 5, 40 10, 10 20, 5 10, 15 5)))",CRS="EPSG:4326")
 # Uncomment the line below to recreate the expected results.
-#WriteGeoLayerToGeoJSON(GeoLayerID="polygons",OutputFile="expected-results/test-CreateGeoLayerFromGeometry-WKT-Polygons-out.geojson")
+# WriteGeoLayerToGeoJSON(GeoLayerID="polygons",OutputFile="expected-results/test-CreateGeoLayerFromGeometry-WKT-Polygons-out.geojson")
 # Write the copied Geolayer to a GeoJSON file
 WriteGeoLayerToGeoJSON(GeoLayerID="polygons",OutputFile="results/test-CreateGeoLayerFromGeometry-WKT-Polygons-out.geojson")
 # Compare the results to the expected results

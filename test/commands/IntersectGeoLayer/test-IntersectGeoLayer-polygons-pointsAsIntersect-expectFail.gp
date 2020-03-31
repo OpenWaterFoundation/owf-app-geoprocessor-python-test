@@ -3,7 +3,6 @@ StartLog(LogFile="results/test-IntersectGeoLayer-polygons-pointsAsIntersect-expe
 # - should fail because the intersecting shape cannot be drawn as a polygon
 # @expectedStatus Failure
 #
-#
 # Read the polygon geojson (input GeoLayer)
 ReadGeoLayerFromGeoJSON(InputFile="data/input_polygons.geojson",GeoLayerID="input_polygons")
 # Read the points geojson (intersect GeoLayer)

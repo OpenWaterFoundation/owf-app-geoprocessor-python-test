@@ -11,8 +11,8 @@ CopyGeoLayer(GeoLayerID="line",Name="line_copy")
 # Add the `addTest` attribute value to GeoLayer "polygon".
 AddGeoLayerAttribute(GeoLayerID="line_copy",AttributeName="addTest",AttributeType="string",InitialValue="test")
 # Uncomment the next line to reproduce the expected results
-#WriteGeoLayerToGeoJSON(GeoLayerID="line_copy",OutputFile="expected-results/test-AddGeoLayerAttribute-Line-Memory-out")
+# WriteGeoLayerToGeoJSON(GeoLayerID="line_copy",OutputFile="expected-results/test-AddGeoLayerAttribute-Line-Memory-out.geojson")
 # Write the in-memory line Geolayer to a GeoJSON file
-WriteGeoLayerToGeoJSON(GeoLayerID="line_copy",OutputFile="results/test-AddGeoLayerAttribute-Line-Memory-out")
+WriteGeoLayerToGeoJSON(GeoLayerID="line_copy",OutputFile="results/test-AddGeoLayerAttribute-Line-Memory-out.geojson")
 # Compare the results to the expected results
 CompareFiles(InputFile1="expected-results/test-AddGeoLayerAttribute-Line-Memory-out.geojson",InputFile2="results/test-AddGeoLayerAttribute-Line-Memory-out.geojson",IfDifferent="Warn")

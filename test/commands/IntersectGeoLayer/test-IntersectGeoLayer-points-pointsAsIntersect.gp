@@ -11,9 +11,9 @@ ReadGeoLayerFromGeoJSON(InputFile="data/intersect_points.geojson",GeoLayerID="in
 # Intersect the points GeoLayer by the intersect points GeoLayer
 IntersectGeoLayer(GeoLayerID="input_points",IntersectGeoLayerID="intersect_points")
 # Uncomment the next line to reproduce the expected results
-#WriteGeoLayerToGeoJSON(GeoLayerID="input_points_intersectedBy_intersect_points",OutputFile="expected-results/test-IntersectGeoLayer-points-pointsAsIntersect-out")
+# WriteGeoLayerToGeoJSON(GeoLayerID="input_points_intersectedBy_intersect_points",OutputFile="expected-results/test-IntersectGeoLayer-points-pointsAsIntersect-out.geojson")
 # Write the output intersected points GeoLayer to GeoJSON format.
-WriteGeoLayerToGeoJSON(GeoLayerID="input_points_intersectedBy_intersect_points",OutputFile="results/test-IntersectGeoLayer-points-pointsAsIntersect-out")
+WriteGeoLayerToGeoJSON(GeoLayerID="input_points_intersectedBy_intersect_points",OutputFile="results/test-IntersectGeoLayer-points-pointsAsIntersect-out.geojson")
 # Compare the results to the expected results
 CompareFiles(InputFile1="results/test-IntersectGeoLayer-points-pointsAsIntersect-out.geojson",InputFile2="expected-results/test-IntersectGeoLayer-points-pointsAsIntersect-out.geojson",IfDifferent="Warn")
 # Free all GeoLayers to avoid errors in suite tests.
