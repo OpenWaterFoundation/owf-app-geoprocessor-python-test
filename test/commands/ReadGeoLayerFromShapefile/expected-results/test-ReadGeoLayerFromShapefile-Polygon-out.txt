@@ -1,0 +1,3 @@
+i="i"
+s="some string"
+propTest="${testString}"
