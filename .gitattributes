@@ -5,10 +5,14 @@
 
 # Denote binary files
 
-*.png binary
+# Image formats
 *.jpg binary
+*.png binary
 
 # GIS files
+# GeoPackage
+*.gpkg binary
+# Shapefiles
 *.dbf binary
 *.shp binary
 *.shx binary

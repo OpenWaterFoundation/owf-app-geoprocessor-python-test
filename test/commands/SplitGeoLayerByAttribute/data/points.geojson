@@ -1,0 +1,132 @@
+{
+  "type": "FeatureCollection",
+  "bbox": [-106.3, 40.1, -104.1, 42.3],
+  "features": [
+      {
+      "type": "Feature",
+      "bbox": [-104.1, 40.1, -104.1, 40.1],
+      "properties": {
+        "Group": "a",
+        "Longitude": -104.1,
+        "Latitude": 40.1,
+        "Name": "a-1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-104.1, 40.1]
+      }
+    },
+    {
+      "type": "Feature",
+      "bbox": [-104.2, 40.2, -104.2, 40.2],
+      "properties": {
+        "Group": "a",
+        "Longitude": -104.2,
+        "Latitude": 40.2,
+        "Name": "a-2"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-104.2, 40.2]
+      }
+    },
+    {
+      "type": "Feature",
+      "bbox": [-104.3, 40.3, -104.3, 40.3],
+      "properties": {
+        "Group": "a",
+        "Longitude": -104.3,
+        "Latitude": 40.3,
+        "Name": "a-3"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-104.3, 40.3]
+      }
+    },
+    {
+      "type": "Feature",
+      "bbox": [-105.1, 41.1, -105.1, 41.1],
+      "properties": {
+        "Group": "b",
+        "Longitude": -105.1,
+        "Latitude": 41.1,
+        "Name": "b-1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-105.1, 41.1]
+      }
+    },
+    {
+      "type": "Feature",
+      "bbox": [-105.2, 41.2, -105.2, 41.2],
+      "properties": {
+        "Group": "b",
+        "Longitude": -105.2,
+        "Latitude": 41.2,
+        "Name": "b-2"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-105.2, 41.2]
+      }
+    },
+    {
+      "type": "Feature",
+      "bbox": [-105.3, 41.3, -105.3, 41.3],
+      "properties": {
+        "Group": "b",
+        "Longitude": -105.3,
+        "Latitude": 41.3,
+        "Name": "b-3"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-105.3, 41.3]
+      }
+    },
+    {
+      "type": "Feature",
+      "bbox": [-106.1, 42.1, -106.1, 42.1],
+      "properties": {
+        "Group": "c",
+        "Longitude": -106.1,
+        "Latitude": 42.1,
+        "Name": "c-1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-106.1, 42.1]
+      }
+    },
+    {
+      "type": "Feature",
+      "bbox": [-106.2, 42.2, -106.2, 42.2],
+      "properties": {
+        "Group": "c",
+        "Longitude": -106.2,
+        "Latitude": 42.2,
+        "Name": "c-2"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-106.2, 42.2]
+      }
+    },
+    {
+      "type": "Feature",
+      "bbox": [-106.3, 42.3, -106.3, 42.3],
+      "properties": {
+        "Group": "c",
+        "Longitude": -106.3,
+        "Latitude": 42.3,
+        "Name": "c-3"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-106.3, 42.3]
+      }
+    }
+  ]
+}

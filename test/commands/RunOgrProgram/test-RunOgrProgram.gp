@@ -1,0 +1,1 @@
+RunOgrProgram(OgrProgram="ogrlinfo",CommandLine="${GdalBinDir}/ogrinfo --formats",StdoutFile="results/stdout.txt")

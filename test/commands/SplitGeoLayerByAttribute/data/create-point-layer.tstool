@@ -1,0 +1,5 @@
+# Process point data from Excel into GeoJSON file
+ReadTableFromExcel(TableID="PointData",InputFile="test-data.xlsx",Worksheet="Data",ExcelColumnNames=FirstRowInRange)
+#
+# Wrote table to GeoJSON format
+WriteTableToGeoJSON(TableID="PointData",OutputFile="points.geojson",LongitudeColumn="Longitude",LatitudeColumn="Latitude")
