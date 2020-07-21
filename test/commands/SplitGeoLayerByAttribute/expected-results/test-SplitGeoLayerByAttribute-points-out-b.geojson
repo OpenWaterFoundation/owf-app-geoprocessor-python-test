@@ -1,0 +1,8 @@
+{
+"type": "FeatureCollection",
+"features": [
+{ "type": "Feature", "properties": { "fid": 1, "Group": "b", "Longitude": -105.1, "Latitude": 41.1, "Name": "b-1" }, "geometry": { "type": "Point", "coordinates": [ -105.1, 41.1 ] } },
+{ "type": "Feature", "properties": { "fid": 2, "Group": "b", "Longitude": -105.2, "Latitude": 41.2, "Name": "b-2" }, "geometry": { "type": "Point", "coordinates": [ -105.2, 41.2 ] } },
+{ "type": "Feature", "properties": { "fid": 3, "Group": "b", "Longitude": -105.3, "Latitude": 41.3, "Name": "b-3" }, "geometry": { "type": "Point", "coordinates": [ -105.3, 41.3 ] } }
+]
+}

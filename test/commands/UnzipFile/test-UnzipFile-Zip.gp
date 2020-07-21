@@ -1,17 +1,18 @@
 StartLog(LogFile="results/test-UnzipFile-Zip.gp.log")
-# Tests the functionality of the UnzipFile command 
+# Tests the functionality of the UnzipFile command
 # - extracts a zip file
 # - all default parameters
+#@docExample
 #
 # Remove the text file from the last run of the test, if existing.
 RemoveFile(SourceFile="results/test-UnzipFile-Zip-out.geojson",IfSourceFileNotFound="Ignore")
-# Copy the original data file. 
+# Copy the original data file.
 CopyFile(SourceFile="data/line_geojson.zip",DestinationFile="results/test-UnzipFile-Zip-in.zip",IfSourceFileNotFound="Fail")
 # Uncomment the next 3 lines to recreate the expected results.
 #UnzipFile(File="results/test-UnzipFile-Zip-in.zip",OutputFolder="expected-results")
 #CopyFile(SourceFile="expected-results/line.geojson",DestinationFile="expected-results/test-UnzipFile-Zip-out.geojson")
 #RemoveFile(SourceFile="expected-results/line.geojson")
-# Extract the copied zip file. 
+# Extract the copied zip file.
 UnzipFile(File="results/test-UnzipFile-Zip-in.zip")
 CopyFile(SourceFile="results/line.geojson",DestinationFile="results/test-UnzipFile-Zip-out.geojson")
 RemoveFile(SourceFile="results/line.geojson")

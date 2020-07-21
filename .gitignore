@@ -11,6 +11,10 @@
 # - aux.xml are created when QGIS or ArcGIS use GDAL to open an image file
 *.aux.xml
 
+# Ignore SQLite optimization files
+*.gpkg-shm
+*.gpkg-wal
+
 # Ignore log files globally
 *.log
 

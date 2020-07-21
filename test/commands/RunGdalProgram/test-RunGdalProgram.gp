@@ -1,1 +1,1 @@
-RunGdalProgram(GdalProgram="gdalinfo",CommandLine="${GdalBinDir}/gdalinfo --help-general")
+RunGdalProgram(GdalProgram="gdalinfo",CommandLine="${GdalBinDir}/gdalinfo --formats",StdoutFile="results/stdout.txt",ExitCodeProperty="ExitCode")
