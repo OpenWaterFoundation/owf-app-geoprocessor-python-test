@@ -8,8 +8,13 @@
 ~$*
 
 # Ignore statistic summary file for images
-# - aux.xml are created when QGIS or ArcGIS use GDAL to open an image file
+# - aux.xml are created dynamically when QGIS or ArcGIS use GDAL to open an image file
 *.aux.xml
+
+# Ignore optimization files for SQLite files
+# - these are created dynamically to improve performance
+*.gpkg-shm
+*.gpkg-wal
 
 # Ignore log files globally
 *.log
