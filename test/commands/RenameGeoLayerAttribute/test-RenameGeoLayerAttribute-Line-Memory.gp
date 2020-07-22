@@ -11,8 +11,8 @@ CopyGeoLayer(GeoLayerID="line")
 # Rename the `toRename` attribute value from GeoLayer "line" to `newName`.
 RenameGeoLayerAttribute(GeoLayerID="line_copy",ExistingAttributeName="toRename",NewAttributeName="newName")
 # Uncomment the next line to reproduce the expected results
-#WriteGeoLayerToGeoJSON(GeoLayerID="line_copy",OutputFile="expected-results/test-RenameGeoLayerAttribute-Line-Memory-out")
-# Write the in-memory line Geolayer to a GeoJSON file 
+# WriteGeoLayerToGeoJSON(GeoLayerID="line_copy",OutputFile="expected-results/test-RenameGeoLayerAttribute-Line-Memory-out")
+# Write the in-memory line Geolayer to a GeoJSON file
 WriteGeoLayerToGeoJSON(GeoLayerID="line_copy",OutputFile="results/test-RenameGeoLayerAttribute-Line-Memory-out")
 # Compare the results to the expected results
 CompareFiles(InputFile1="expected-results/test-RenameGeoLayerAttribute-Line-Memory-out.geojson",InputFile2="results/test-RenameGeoLayerAttribute-Line-Memory-out.geojson",IfDifferent="Warn")

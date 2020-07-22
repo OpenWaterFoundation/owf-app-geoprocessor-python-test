@@ -5,15 +5,15 @@ StartLog(LogFile="results/test-RemoveGeoLayerAttributes-Lines-OnDisk-multiAttrib
 # - the attributes are being removed from an on-disk GeoLayer
 # Remove the results from the last run of this test, if exists.
 RemoveFile(SourceFile="results/test-RemoveGeoLayerAttributes-Lines-OnDisk-multiAttribute-out.geojson",IfSourceFileNotFound="Ignore")
-# Make a copy of the lines GeoJSON file. 
+# Make a copy of the lines GeoJSON file.
 CopyFile(SourceFile="data/lines.geojson",DestinationFile="data/lines_copy.geojson")
 # Read the copied lines GeoJSON file into the GeoProcessor (with GeoLayerID of "lines").
 ReadGeoLayerFromGeoJSON(InputFile="data/lines_copy.geojson",GeoLayerID="lines")
 # Remove the `toRemove` and the `toRemove2` attribute values from GeoLayer "lines".
 RemoveGeoLayerAttributes(GeoLayerID="lines",AttributeNames="toRemove,toRemove2")
 # Uncomment the next line to reproduce the expected results
-#WriteGeoLayerToGeoJSON(GeoLayerID="lines",OutputFile="expected-results/test-RemoveGeoLayerAttributes-Lines-OnDisk-multiAttribute-out")
-# Write the lines Geolayer to a GeoJSON file 
+# WriteGeoLayerToGeoJSON(GeoLayerID="lines",OutputFile="expected-results/test-RemoveGeoLayerAttributes-Lines-OnDisk-multiAttribute-out")
+# Write the lines Geolayer to a GeoJSON file
 WriteGeoLayerToGeoJSON(GeoLayerID="lines",OutputFile="results/test-RemoveGeoLayerAttributes-Lines-OnDisk-multiAttribute-out")
 # Compare the results to the expected results
 CompareFiles(InputFile1="expected-results/test-RemoveGeoLayerAttributes-Lines-OnDisk-multiAttribute-out.geojson",InputFile2="results/test-RemoveGeoLayerAttributes-Lines-OnDisk-multiAttribute-out.geojson",IfDifferent="Warn")

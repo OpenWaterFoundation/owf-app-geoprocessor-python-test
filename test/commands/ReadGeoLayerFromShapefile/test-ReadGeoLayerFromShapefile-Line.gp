@@ -7,7 +7,7 @@ RemoveFile(SourceFile="results/test-ReadGeoLayerFromShapefile-Line-out.geojson",
 # Read the line Shapefile (with GeoLayerID of "line") into the GeoProcessor
 ReadGeoLayerFromShapefile(InputFile="data/line.shp",GeoLayerID="line")
 # Uncomment the below line to recreate the expected results
-#WriteGeoLayerToGeoJSON(GeoLayerID="line",OutputFile="expected-results/test-ReadGeoLayerFromShapefile-Line-out.geojson")
+# WriteGeoLayerToGeoJSON(GeoLayerID="line",OutputFile="expected-results/test-ReadGeoLayerFromShapefile-Line-out.geojson")
 # Write the line Geolayer to a GeoJSON file
 WriteGeoLayerToGeoJSON(GeoLayerID="line",OutputFile="results/test-ReadGeoLayerFromShapefile-Line-out.geojson")
 # Compare the results to the expected results
