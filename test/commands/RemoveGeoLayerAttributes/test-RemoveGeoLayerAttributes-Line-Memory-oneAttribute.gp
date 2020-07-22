@@ -11,8 +11,8 @@ CopyGeoLayer(GeoLayerID="line")
 # Remove the `toRemove` attribute values from the GeoLayer "line_copy"
 RemoveGeoLayerAttributes(GeoLayerID="line_copy",AttributeNames="toRemove")
 # Uncomment the next line to reproduce the expected results
-#WriteGeoLayerToGeoJSON(GeoLayerID="line_copy",OutputFile="expected-results/test-RemoveGeoLayerAttributes-Line-Memory-oneAttribute-out")
-# Write the in-memory line Geolayer to a GeoJSON file 
+# WriteGeoLayerToGeoJSON(GeoLayerID="line_copy",OutputFile="expected-results/test-RemoveGeoLayerAttributes-Line-Memory-oneAttribute-out")
+# Write the in-memory line Geolayer to a GeoJSON file
 WriteGeoLayerToGeoJSON(GeoLayerID="line_copy",OutputFile="results/test-RemoveGeoLayerAttributes-Line-Memory-oneAttribute-out")
 # Compare the results to the expected results
 CompareFiles(InputFile1="expected-results/test-RemoveGeoLayerAttributes-Line-Memory-oneAttribute-out.geojson",InputFile2="results/test-RemoveGeoLayerAttributes-Line-Memory-oneAttribute-out.geojson",IfDifferent="Warn")

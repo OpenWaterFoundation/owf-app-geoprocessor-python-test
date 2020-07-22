@@ -11,8 +11,8 @@ CopyGeoLayer(GeoLayerID="polygon")
 # Rename the `toRename` attribute value from GeoLayer "polygon" to `newName`.
 RenameGeoLayerAttribute(GeoLayerID="polygon_copy",ExistingAttributeName="toRename",NewAttributeName="newName")
 # Uncomment the next polygon to reproduce the expected results
-#WriteGeoLayerToGeoJSON(GeoLayerID="polygon_copy",OutputFile="expected-results/test-RenameGeoLayerAttribute-Polygon-Memory-out")
-# Write the in-memory polygon Geolayer to a GeoJSON file 
+# WriteGeoLayerToGeoJSON(GeoLayerID="polygon_copy",OutputFile="expected-results/test-RenameGeoLayerAttribute-Polygon-Memory-out")
+# Write the in-memory polygon Geolayer to a GeoJSON file
 WriteGeoLayerToGeoJSON(GeoLayerID="polygon_copy",OutputFile="results/test-RenameGeoLayerAttribute-Polygon-Memory-out")
 # Compare the results to the expected results
 CompareFiles(InputFile1="expected-results/test-RenameGeoLayerAttribute-Polygon-Memory-out.geojson",InputFile2="results/test-RenameGeoLayerAttribute-Polygon-Memory-out.geojson",IfDifferent="Warn")
