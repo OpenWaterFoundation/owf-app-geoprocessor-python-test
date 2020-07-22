@@ -5,8 +5,10 @@ StartLog(LogFile="results/test-ReadGeoLayersFromGeoPackage-one-points.gp.log")
 #
 # Remove the result point geojson file from the last run of the test, if existing
 RemoveFile(SourceFile="results/test-ReadGeoLayersFromGeoPackage-one-points-out.geojson",IfSourceFileNotFound="Ignore")
+# Copy the GeoPackage file to results because reading it causes a change
+CopyFile(SourceFile="data/points-one-layer.gpkg",DestinationFile="results/points-one-layer.gpkg")
 # Read the `point` feature class from the file geodatabase
-ReadGeoLayersFromGeoPackage(InputFile="data/points-one-layer.gpkg",ReadOneLayer="True",LayerName="Group_a",GeoLayerID="points")
+ReadGeoLayersFromGeoPackage(InputFile="results/points-one-layer.gpkg",ReadOneLayer="True",LayerName="Group_a",GeoLayerID="points")
 # Uncomment the next line to reproduce the expected results
 # WriteGeoLayerToGeoJSON(GeoLayerID="points",OutputFile="expected-results/test-ReadGeoLayersFromGeoPackage-one-points-out")
 # Write the point Geolayer to a GeoJSON file
