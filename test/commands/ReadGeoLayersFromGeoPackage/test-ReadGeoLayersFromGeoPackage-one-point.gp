@@ -10,8 +10,8 @@ CopyFile(SourceFile="data/points-one-layer.gpkg",DestinationFile="results/points
 # Read the `point` feature class from the file geodatabase
 ReadGeoLayersFromGeoPackage(InputFile="results/points-one-layer.gpkg",ReadOneLayer="True",LayerName="Group_a",GeoLayerID="points")
 # Uncomment the next line to reproduce the expected results
-# WriteGeoLayerToGeoJSON(GeoLayerID="points",OutputFile="expected-results/test-ReadGeoLayersFromGeoPackage-one-points-out")
+# WriteGeoLayerToGeoJSON(GeoLayerID="points",OutputFile="expected-results/test-ReadGeoLayersFromGeoPackage-one-points-out.geojson")
 # Write the point Geolayer to a GeoJSON file
-WriteGeoLayerToGeoJSON(GeoLayerID="points",OutputFile="results/test-ReadGeoLayersFromGeoPackage-one-points-out")
+WriteGeoLayerToGeoJSON(GeoLayerID="points",OutputFile="results/test-ReadGeoLayersFromGeoPackage-one-points-out.geojson")
 # Compare the results to the expected results
 CompareFiles(InputFile1="results/test-ReadGeoLayersFromGeoPackage-one-points-out.geojson",InputFile2="expected-results/test-ReadGeoLayersFromGeoPackage-one-points-out.geojson",IfDifferent="Warn")
