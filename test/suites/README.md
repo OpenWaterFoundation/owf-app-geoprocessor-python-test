@@ -1,7 +1,8 @@
-# test/suites #
+# test-suites
 
-This folder contains geoprocessor test suites,
-in particular the main test suite assembled from all command functional tests.
+This folder contains tests suites that can be created and run to run groups of tests.
+The following test suites are defined:
 
-* `create` - command files used to create test suites
-* `run` - command files generated from `create` command files, which are then run for automated functional testing
+| **Test Suite** | **Description** |
+| -- | -- |
+| `general` | Currently, all of the command tests. |
