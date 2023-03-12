@@ -8,9 +8,9 @@ ReadGeoLayerFromGeoJSON(InputFile="data/points.geojson",GeoLayerID="points")
 # Split the GeoLayer.
 SplitGeoLayerByAttribute(InputGeoLayerID="points",AttributeName="Group",TemporaryFolder="results/points-split")
 # Uncomment the 3 lines below to recreate the expected results
-WriteGeoLayerToGeoJSON(GeoLayerID="points_Group_a",OutputFile="expected-results/test-SplitGeoLayerByAttribute-points-out-a.geojson")
-WriteGeoLayerToGeoJSON(GeoLayerID="points_Group_b",OutputFile="expected-results/test-SplitGeoLayerByAttribute-points-out-b.geojson")
-WriteGeoLayerToGeoJSON(GeoLayerID="points_Group_c",OutputFile="expected-results/test-SplitGeoLayerByAttribute-points-out-c.geojson")
+# WriteGeoLayerToGeoJSON(GeoLayerID="points_Group_a",OutputFile="expected-results/test-SplitGeoLayerByAttribute-points-out-a.geojson")
+# WriteGeoLayerToGeoJSON(GeoLayerID="points_Group_b",OutputFile="expected-results/test-SplitGeoLayerByAttribute-points-out-b.geojson")
+# WriteGeoLayerToGeoJSON(GeoLayerID="points_Group_c",OutputFile="expected-results/test-SplitGeoLayerByAttribute-points-out-c.geojson")
 # Write the layers
 WriteGeoLayerToGeoJSON(GeoLayerID="points_Group_a",OutputFile="results/test-SplitGeoLayerByAttribute-points-out-a.geojson")
 WriteGeoLayerToGeoJSON(GeoLayerID="points_Group_b",OutputFile="results/test-SplitGeoLayerByAttribute-points-out-b.geojson")
