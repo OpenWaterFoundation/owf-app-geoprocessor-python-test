@@ -6,4 +6,4 @@
 # - TODO smalers 2023-03-10 need to implement the commands and DateTime support
 #SetProperty(PropertyName="Now",PropertyType=DateTime,PropertyValue="CurrentToMinute")
 #FormatDateTimeProperty(PropertyName="NowString",DateTimePropertyName="Now",Format="%Y%m%d%H%M")
-SetProperty(PropertyName="NowString",PropertyType="str",PropertyValue="2023-03-10")
+SetProperty(PropertyName="NowString",PropertyType="str",PropertyValue="2023-03-12")
